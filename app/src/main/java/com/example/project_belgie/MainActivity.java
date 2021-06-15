@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     //Textviews initen
-    TextView textView1,textView2;
+    TextView textView1,textView2,textView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +20,12 @@ public class MainActivity extends AppCompatActivity {
         //textviews connecteren
         textView1 = findViewById(R.id.text1);
         textView2 = findViewById(R.id.text2);
+        textView3 = findViewById(R.id.text3);
 
         //functies
         click_1();
         click_2();
+        click_3();
     }
 
     public void click_1(){
@@ -41,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void click_3(){
+        textView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity4.class);
                 startActivity(intent);
             }
         });

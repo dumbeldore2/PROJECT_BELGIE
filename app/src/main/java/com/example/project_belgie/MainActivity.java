@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     //Textviews initen
-    TextView textView1,textView2,textView3;
+    TextView textView1,textView2,textView3,textView4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +21,13 @@ public class MainActivity extends AppCompatActivity {
         textView1 = findViewById(R.id.text1);
         textView2 = findViewById(R.id.text2);
         textView3 = findViewById(R.id.text3);
+        textView4 = findViewById(R.id.text4);
 
         //functies
         click_1();
         click_2();
         click_3();
+        click_4();
     }
 
     public void click_1(){
@@ -53,6 +55,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity4.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void click_4(){
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity5.class);
                 startActivity(intent);
             }
         });

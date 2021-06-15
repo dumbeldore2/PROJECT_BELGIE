@@ -4,15 +4,248 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/color_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/view1"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color1"
+                android:text="persoon"
+                android:gravity="center"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color2"
+                android:text="plaats"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color3"
+                android:text="pijn"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color3"
+                android:text="tijd symp."
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view5"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color3"
+                android:text="voorgeschied."
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/view6"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color4"
+                android:text="bewustzijn"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view7"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color5"
+                android:text="ademhaling"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view8"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color6"
+                android:text="extra info"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view9"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color7"
+                android:text="circulatie"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view10"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color8"
+                android:text="symptoon"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/view11"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color9"
+                android:text="lichaam"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view12"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color10"
+                android:text="epileptie"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view13"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color11"
+                android:text="glyceamie"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view14"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color12"
+                android:text="trauma"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view15"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color13"
+                android:text="electro"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/view16"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color14"
+                android:text="zwanger"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view17"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color15"
+                android:text="reset"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/view18"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent"
+                android:minHeight="100dp"
+                android:background="@color/color15"
+                android:text="end"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

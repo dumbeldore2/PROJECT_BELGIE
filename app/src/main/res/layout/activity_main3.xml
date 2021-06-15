@@ -18,7 +18,7 @@
             android:id="@+id/linear2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.2"
+            android:layout_weight="0.25"
             android:orientation="horizontal">
 
 
@@ -47,10 +47,9 @@
             android:id="@+id/linear3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.1"
+            android:layout_weight="0.15"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginTop="10dp">
 
             <TextView
                 android:id="@+id/text3"
@@ -75,10 +74,9 @@
             android:id="@+id/linear4"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.1"
+            android:layout_weight="0.15"
             android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp">
+            android:layout_marginTop="5dp">
 
             <TextView
                 android:id="@+id/text4"
@@ -145,7 +143,7 @@
                 android:text="openbare \n plaats"
                 android:background="@color/color15"
                 android:gravity="center"
-                android:textSize="48dp"
+                android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
             <TextView
@@ -167,7 +165,7 @@
                 android:text="verzekerde \n omg."
                 android:gravity="center"
                 android:background="@color/color15"
-                android:textSize="48dp"
+                android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
 

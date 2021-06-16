@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Textviews initen
     TextView textView1,textView2,textView3,textView4,textView5
-            ,textView6,textView7,textView8;
+            ,textView6,textView7,textView8,textView9;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         textView6 = findViewById(R.id.text6);
         textView7 = findViewById(R.id.text7);
         textView8 = findViewById(R.id.text8);
+        textView9 = findViewById(R.id.text9);
 
         //functies
         click_1();
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         click_6();
         click_7();
         click_8();
+        click_9();
     }
 
     public void click_1(){
@@ -114,6 +116,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),MainActivity9.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void click_9(){
+        textView9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity10.class);
                 startActivity(intent);
             }
         });

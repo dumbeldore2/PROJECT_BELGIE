@@ -42,7 +42,6 @@
                 android:gravity="center"
                 android:textSize="64dp"/>
         </LinearLayout>
-
         <LinearLayout
             android:id="@+id/linear3"
             android:layout_width="match_parent"

@@ -5,5 +5,196 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity12">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/color_background">
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="back"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="64dp"/>
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="0dp"
+                android:layout_weight="0.75"
+                android:layout_height="match_parent"
+                android:text="lichaam"
+                android:background="@color/color9"
+                android:gravity="center"
+                android:textSize="64dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="hoofd"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="aangezicht"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="hals en nek"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="schouders"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="arm hand"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="thorax"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="buik"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="rug"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="onderrug"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="stuit"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="bekken"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"
+                android:text="voeten"
+                android:background="@color/color15"
+                android:gravity="center"
+                android:textSize="32dp"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

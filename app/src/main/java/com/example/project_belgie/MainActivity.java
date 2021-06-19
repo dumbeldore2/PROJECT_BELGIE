@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         textView13.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity13.class);
+                Intent intent = new Intent(getApplicationContext(),MainActivity14.class);
                 startActivity(intent);
             }
         });
@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
         textView14.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity14.class);
+                Intent intent = new Intent(getApplicationContext(),MainActivity15.class);
                 startActivity(intent);
             }
         });

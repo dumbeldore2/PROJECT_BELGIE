@@ -34,8 +34,6 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_2_col_7 = "plaats_verzekerder_omg";
     public static final String Table_2_col_8 = "plaats_id";
 
-    //todo: init tabel 3
-
     //tabel 3
     public static final String DATABASE_table_3 = "pijn";
     public static final String Table_3_col_1 = "pijn_emo_1";
@@ -81,7 +79,6 @@ public class Database extends SQLiteOpenHelper {
                 + Table_2_col_6 + " INTEGER DEFAULT 0 ," + Table_2_col_7 + " INTEGER DEFAULT 0 ,"
                 + Table_2_col_8 + " INTEGER DEFAULT 0 primary key)");
 
-        //todo: add tabel 3
         //tabel 3
         db.execSQL("create table " + DATABASE_table_3 + "(" + Table_3_col_1 + " INTEGER DEFAULT 0 ,"
                 + Table_3_col_2 + " INTEGER DEFAULT 0 ," + Table_3_col_3 + " INTEGER DEFAULT 0 ,"
@@ -107,7 +104,6 @@ public class Database extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_1);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_2);
-        //todo: add tabel 3
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_3);
         //todo: add tabel 4
         //todo: add tabel 5

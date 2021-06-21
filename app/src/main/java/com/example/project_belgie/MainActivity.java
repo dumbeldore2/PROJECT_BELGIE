@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
             ,textView11,textView12,textView13,textView14,textView15
             ,textView16;
 
+    //database initen
+    Database database;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         textView15 = findViewById(R.id.text15);
         textView16 = findViewById(R.id.text16);
 
+        //database conecteren
+        database = new Database(this);
+        //todo : verander de namen in een soort van lijstview waardoor je direct kan zien wat je preventief hebt aangeduid
         //functies
         click_1();
         click_2();

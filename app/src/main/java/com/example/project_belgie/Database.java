@@ -31,9 +31,20 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_2_col_4 = "plaats_mobiel";
     public static final String Table_2_col_5 = "plaats_openbare_plaats";
     public static final String Table_2_col_6 = "plaats_prive";
-    public static final String Table_2_col_7 = "plaats_verzekerder_omg.";
+    public static final String Table_2_col_7 = "plaats_verzekerder_omg";
+    public static final String Table_2_col_8 = "plaats_id";
 
     //todo: init tabel 3
+
+    //tabel 3
+    public static final String DATABASE_table_3 = "pijn";
+    public static final String Table_3_col_1 = "pijn_emo_1";
+    public static final String Table_3_col_2 = "pijn_emo_2";
+    public static final String Table_3_col_3 = "pijn_pijn_1";
+    public static final String Table_3_col_4 = "pijn_pijn_2";
+    public static final String Table_3_col_5 = "pijn_pijn_3";
+    public static final String Table_3_col_6 = "pijn_id";
+
     //todo: init tabel 4
     //todo: init tabel 5
     //todo: init tabel 6
@@ -61,15 +72,22 @@ public class Database extends SQLiteOpenHelper {
                 + Table_1_col_2 + " INTEGER DEFAULT 0 ," + Table_1_col_3 + " INTEGER DEFAULT 0 ,"
                 + Table_1_col_4 + " INTEGER DEFAULT 0 ," + Table_1_col_5 + " INTEGER DEFAULT 0 ,"
                 + Table_1_col_6 + " INTEGER DEFAULT 0 ," + Table_1_col_7 + " INTEGER DEFAULT 0 ,"
-                + Table_1_col_8 + " INTEGER DEFAULT 0 ," + Table_1_col_9 + " INTEGER DEFAULT 0 )");
+                + Table_1_col_8 + " INTEGER DEFAULT 0 ," + Table_1_col_9 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 2
         db.execSQL("create table " + DATABASE_table_2 + "(" + Table_2_col_1 + " TEXT ,"
-                + Table_2_col_2 + " INTEGER DEFAULT 0 ," + Table_2_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_2_col_2 + " TEXT ," + Table_2_col_3 + " INTEGER DEFAULT 0 ,"
                 + Table_2_col_4 + " INTEGER DEFAULT 0 ," + Table_2_col_5 + " INTEGER DEFAULT 0 ,"
-                + Table_2_col_6 + " INTEGER DEFAULT 0 ," + Table_2_col_7 + " INTEGER DEFAULT 0 )");
+                + Table_2_col_6 + " INTEGER DEFAULT 0 ," + Table_2_col_7 + " INTEGER DEFAULT 0 ,"
+                + Table_2_col_8 + " INTEGER DEFAULT 0 primary key)");
 
         //todo: add tabel 3
+        //tabel 3
+        db.execSQL("create table " + DATABASE_table_3 + "(" + Table_3_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_3_col_2 + " INTEGER DEFAULT 0 ," + Table_3_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_3_col_4 + " INTEGER DEFAULT 0 ," + Table_3_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_3_col_6 + " INTEGER DEFAULT 0 primary key)");
+
         //todo: add tabel 4
         //todo: add tabel 5
         //todo: add tabel 6
@@ -90,6 +108,7 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_1);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_2);
         //todo: add tabel 3
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_3);
         //todo: add tabel 4
         //todo: add tabel 5
         //todo: add tabel 6

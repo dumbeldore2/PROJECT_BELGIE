@@ -85,19 +85,6 @@ public class Database extends SQLiteOpenHelper {
                 + Table_3_col_4 + " INTEGER DEFAULT 0 ," + Table_3_col_5 + " INTEGER DEFAULT 0 ,"
                 + Table_3_col_6 + " INTEGER DEFAULT 0 primary key)");
 
-        //todo: add tabel 4
-        //todo: add tabel 5
-        //todo: add tabel 6
-        //todo: add tabel 7
-        //todo: add tabel 8
-        //todo: add tabel 9
-        //todo: add tabel 10
-        //todo: add tabel 11
-        //todo: add tabel 12
-        //todo: add tabel 13
-        //todo: add tabel 14
-        //todo: add tabel 15
-        //todo: add tabel 16
     }
 
     @Override
@@ -105,18 +92,5 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_1);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_2);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_3);
-        //todo: add tabel 4
-        //todo: add tabel 5
-        //todo: add tabel 6
-        //todo: add tabel 7
-        //todo: add tabel 8
-        //todo: add tabel 9
-        //todo: add tabel 10
-        //todo: add tabel 11
-        //todo: add tabel 12
-        //todo: add tabel 13
-        //todo: add tabel 14
-        //todo: add tabel 15
-        //todo: add tabel 16
     }
 }

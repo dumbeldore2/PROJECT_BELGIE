@@ -52,7 +52,17 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_4_col_5 = "tijd_symp_meer_dan_2_dagen";
     public static final String Table_4_col_6 = "tijd_symp_snelle_opname";
     public static final String Table_4_col_7 = "tijd_symp_id";
-    //todo: init tabel 5
+
+    //tabel 5
+    public static final String DATABASE_table_5 = "voorgeschied";
+    public static final String Table_5_col_1 = "voorgeschied_cardio";
+    public static final String Table_5_col_2 = "voorgeschied_neuro";
+    public static final String Table_5_col_3 = "voorgeschied_diabetes";
+    public static final String Table_5_col_4 = "voorgeschied_bloed_verdunners";
+    public static final String Table_5_col_5 = "voorgeschied_copd";
+    public static final String Table_5_col_6 = "voorgeschied_aneurisma";
+    public static final String Table_5_col_7 = "voorgeschied_id";
+
     //todo: init tabel 6
     //todo: init tabel 7
     //todo: init tabel 8
@@ -99,6 +109,12 @@ public class Database extends SQLiteOpenHelper {
                 + Table_4_col_4 + " INTEGER DEFAULT 0 ," + Table_4_col_5 + " INTEGER DEFAULT 0 ,"
                 + Table_4_col_6 + " INTEGER DEFAULT 0 ," + Table_4_col_7 + " INTEGER DEFAULT 0 primary key)");
 
+        //tabel 5
+        db.execSQL("create table " + DATABASE_table_5 + "(" + Table_5_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_5_col_2 + " INTEGER DEFAULT 0 ," + Table_5_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_5_col_4 + " INTEGER DEFAULT 0 ," + Table_5_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_5_col_6 + " INTEGER DEFAULT 0 ," + Table_5_col_7 + " INTEGER DEFAULT 0 primary key)");
+
     }
 
     @Override
@@ -107,5 +123,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_2);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_3);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_4);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_5);
     }
 }

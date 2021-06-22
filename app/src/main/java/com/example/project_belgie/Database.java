@@ -154,6 +154,21 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_10_col_17 = "symptoon_suicidaal";
     public static final String Table_10_col_18 = "symptoon_id";
 
+    //tabel 11
+    public static final String DATABASE_table_11 = "lichaam";
+    public static final String Table_11_col_1 = "lichaam_hoofd";
+    public static final String Table_11_col_2 = "lichaam_aangezicht";
+    public static final String Table_11_col_3 = "lichaam_hals_en_nek";
+    public static final String Table_11_col_4 = "lichaam_schouders";
+    public static final String Table_11_col_5 = "lichaam_arm_hand";
+    public static final String Table_11_col_6 = "lichaam_thorax";
+    public static final String Table_11_col_7 = "lichaam_buik";
+    public static final String Table_11_col_8 = "lichaam_rug";
+    public static final String Table_11_col_9 = "lichaam_onderrug";
+    public static final String Table_11_col_10 = "lichaam_stuit";
+    public static final String Table_11_col_11 = "lichaam_bekken";
+    public static final String Table_11_col_12 = "lichaam_voeten";
+    public static final String Table_11_col_13 = "lichaam_id";
     //todo: init tabel 11
     //todo: init tabel 12
     //todo: init tabel 13
@@ -252,6 +267,15 @@ public class Database extends SQLiteOpenHelper {
                 + Table_10_col_14 + " INTEGER DEFAULT 0 ," + Table_10_col_15 + " INTEGER DEFAULT 0 ,"
                 + Table_10_col_16 + " INTEGER DEFAULT 0 ," + Table_10_col_17 + " INTEGER DEFAULT 0 ,"
                 + Table_10_col_18 + " INTEGER DEFAULT 0 primary key)");
+
+        //tabel 11
+        db.execSQL("create table " + DATABASE_table_11 + "(" + Table_11_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_11_col_2 + " INTEGER DEFAULT 0 ," + Table_11_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_11_col_4 + " INTEGER DEFAULT 0 ," + Table_11_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_11_col_6 + " INTEGER DEFAULT 0 ," + Table_11_col_7 + " INTEGER DEFAULT 0 ,"
+                + Table_11_col_8 + " INTEGER DEFAULT 0 ," + Table_11_col_9 + " INTEGER DEFAULT 0 ,"
+                + Table_11_col_10 + " INTEGER DEFAULT 0 ," + Table_11_col_11 + " INTEGER DEFAULT 0 ,"
+                + Table_11_col_12 + " INTEGER DEFAULT 0 ," + Table_11_col_13 + " INTEGER DEFAULT 0 primary key)");
 
     }
 

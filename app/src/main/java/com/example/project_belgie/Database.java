@@ -113,6 +113,26 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_8_col_9 = "extra_info_ha_meerwaarde";
     public static final String Table_8_col_10 = "extra_info_id";
 
+    //tabel 9
+    public static final String DATABASE_table_9 = "circulatie";
+    public static final String Table_9_col_1 = "circulatie_c1";
+    public static final String Table_9_col_2 = "circulatie_c2";
+    public static final String Table_9_col_3 = "circulatie_c3";
+    public static final String Table_9_col_4 = "circulatie_bleek";
+    public static final String Table_9_col_5 = "circulatie_brady";
+    public static final String Table_9_col_6 = "circulatie_cardiogeen";
+    public static final String Table_9_col_7 = "circulatie_defibrilator";
+    public static final String Table_9_col_8 = "circulatie_dood";
+    public static final String Table_9_col_9 = "circulatie_hypovolemie";
+    public static final String Table_9_col_10 = "circulatie_pacemaker";
+    public static final String Table_9_col_11 = "circulatie_tachy";
+    public static final String Table_9_col_12 = "circulatie_rea";
+    public static final String Table_9_col_13 = "circulatie_zweten";
+    public static final String Table_9_col_14 = "circulatie_bloed";
+    public static final String Table_9_col_15 = "circulatie_pob";
+    public static final String Table_9_col_16 = "circulatie_shock";
+    public static final String Table_9_col_17 = "circulatie_id";
+
     //todo: init tabel 9
     //todo: init tabel 10
     //todo: init tabel 11
@@ -191,6 +211,17 @@ public class Database extends SQLiteOpenHelper {
                 + Table_8_col_8 + " INTEGER DEFAULT 0 ," + Table_8_col_9 + " INTEGER DEFAULT 0 ,"
                 + Table_8_col_10 + " INTEGER DEFAULT 0 primary key)");
 
+        //tabel 9
+        db.execSQL("create table " + DATABASE_table_9 + "(" + Table_9_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_9_col_2 + " INTEGER DEFAULT 0 ," + Table_9_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_9_col_4 + " INTEGER DEFAULT 0 ," + Table_9_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_9_col_6 + " INTEGER DEFAULT 0 ," + Table_9_col_7 + " INTEGER DEFAULT 0 ,"
+                + Table_9_col_9 + " INTEGER DEFAULT 0 ," + Table_9_col_9 + " INTEGER DEFAULT 0 ,"
+                + Table_9_col_10 + " INTEGER DEFAULT 0 ," + Table_9_col_11 + " INTEGER DEFAULT 0 ,"
+                + Table_9_col_12 + " INTEGER DEFAULT 0 ," + Table_9_col_13 + " INTEGER DEFAULT 0 ,"
+                + Table_9_col_14 + " INTEGER DEFAULT 0 ," + Table_9_col_15 + " INTEGER DEFAULT 0 ,"
+                + Table_9_col_16 + " INTEGER DEFAULT 0 ," + Table_9_col_17 + " INTEGER DEFAULT 0 primary key)");
+
     }
 
     @Override
@@ -203,5 +234,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_6);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_7);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_8);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_9);
     }
 }

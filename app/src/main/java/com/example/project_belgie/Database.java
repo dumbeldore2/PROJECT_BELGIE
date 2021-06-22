@@ -133,8 +133,27 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_9_col_16 = "circulatie_shock";
     public static final String Table_9_col_17 = "circulatie_id";
 
-    //todo: init tabel 9
-    //todo: init tabel 10
+    //tabel 10
+    public static final String DATABASE_table_10 = "symptoon";
+    public static final String Table_10_col_1 = "symptoon_bewegingsdrang";
+    public static final String Table_10_col_2 = "symptoon_snelle_evolutie";
+    public static final String Table_10_col_3 = "symptoon_braken";
+    public static final String Table_10_col_4 = "symptoon_depressief";
+    public static final String Table_10_col_5 = "symptoon_deshydratatie";
+    public static final String Table_10_col_6 = "symptoon_diarree";
+    public static final String Table_10_col_7 = "symptoon_fotofobie";
+    public static final String Table_10_col_8 = "symptoon_hartkloppingen";
+    public static final String Table_10_col_9 = "symptoon_hypertherm";
+    public static final String Table_10_col_10 = "symptoon_koorts";
+    public static final String Table_10_col_11 = "symptoon_misselijk";
+    public static final String Table_10_col_12 = "symptoon_nekstijf";
+    public static final String Table_10_col_13 = "symptoon_onderkoeling";
+    public static final String Table_10_col_14 = "symptoon_onwel";
+    public static final String Table_10_col_15 = "symptoon_plankharde_buik";
+    public static final String Table_10_col_16 = "symptoon_stuipen";
+    public static final String Table_10_col_17 = "symptoon_suicidaal";
+    public static final String Table_10_col_18 = "symptoon_id";
+
     //todo: init tabel 11
     //todo: init tabel 12
     //todo: init tabel 13
@@ -222,6 +241,18 @@ public class Database extends SQLiteOpenHelper {
                 + Table_9_col_14 + " INTEGER DEFAULT 0 ," + Table_9_col_15 + " INTEGER DEFAULT 0 ,"
                 + Table_9_col_16 + " INTEGER DEFAULT 0 ," + Table_9_col_17 + " INTEGER DEFAULT 0 primary key)");
 
+        //tabel 10
+        db.execSQL("create table " + DATABASE_table_10 + "(" + Table_10_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_2 + " INTEGER DEFAULT 0 ," + Table_10_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_4 + " INTEGER DEFAULT 0 ," + Table_10_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_6 + " INTEGER DEFAULT 0 ," + Table_10_col_7 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_9 + " INTEGER DEFAULT 0 ," + Table_10_col_9 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_10 + " INTEGER DEFAULT 0 ," + Table_10_col_11 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_12 + " INTEGER DEFAULT 0 ," + Table_10_col_13 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_14 + " INTEGER DEFAULT 0 ," + Table_10_col_15 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_16 + " INTEGER DEFAULT 0 ," + Table_10_col_17 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_18 + " INTEGER DEFAULT 0 primary key)");
+
     }
 
     @Override
@@ -235,5 +266,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_7);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_8);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_9);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_10);
     }
 }

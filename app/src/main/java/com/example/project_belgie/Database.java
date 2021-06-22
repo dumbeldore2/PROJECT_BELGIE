@@ -291,5 +291,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_8);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_9);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_10);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_11);
     }
 }

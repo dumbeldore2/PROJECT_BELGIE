@@ -63,7 +63,43 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_5_col_6 = "voorgeschied_aneurisma";
     public static final String Table_5_col_7 = "voorgeschied_id";
 
-    //todo: init tabel 6
+    //tabel 6
+    public static final String DATABASE_table_6 = "bewustzijn";
+    public static final String Table_6_col_1 = "bewustzijn_b1";
+    public static final String Table_6_col_2 = "bewustzijn_b2";
+    public static final String Table_6_col_3 = "bewustzijn_b3";
+    public static final String Table_6_col_4 = "bewustzijn_agressief";
+    public static final String Table_6_col_5 = "bewustzijn_angst";
+    public static final String Table_6_col_6 = "bewustzijn_apatisch";
+    public static final String Table_6_col_7 = "bewustzijn_coma";
+    public static final String Table_6_col_8 = "bewustzijn_cva_sympt";
+    public static final String Table_6_col_9 = "bewustzijn_dronken";
+    public static final String Table_6_col_10 = "bewustzijn_intox";
+    public static final String Table_6_col_11 = "bewustzijn_neuro";
+    public static final String Table_6_col_12 = "bewustzijn_onrust";
+    public static final String Table_6_col_13 = "bewustzijn_psy";
+    public static final String Table_6_col_14 = "bewustzijn_suf";
+    public static final String Table_6_col_15 = "bewustzijn_suf_kreunend";
+    public static final String Table_6_col_16 = "bewustzijn_syncopaal";
+    public static final String Table_6_col_17 = "bewustzijn_verlamming";
+    public static final String Table_6_col_18 = "bewustzijn_verward";
+    public static final String Table_6_col_19 = "bewustzijn_id";
+
+    //tabel 7
+    public static final String DATABASE_table_7 = "ademhaling";
+    public static final String Table_7_col_1 = "ademhaling_a1";
+    public static final String Table_7_col_2 = "ademhaling_a2";
+    public static final String Table_7_col_3 = "ademhaling_a3";
+    public static final String Table_7_col_4 = "ademhaling_cyanose";
+    public static final String Table_7_col_5 = "ademhaling_desat";
+    public static final String Table_7_col_6 = "ademhaling_dyspnea";
+    public static final String Table_7_col_7 = "ademhaling_hyperventilatie";
+    public static final String Table_7_col_8 = "ademhaling_geen_volzinnen";
+    public static final String Table_7_col_9 = "ademhaling_luide_ademhaling";
+    public static final String Table_7_col_10 = "ademhaling_obstructief";
+    public static final String Table_7_col_11 = "ademhaling_sliklast";
+    public static final String Table_7_col_12 = "ademhaling_id";
+
     //todo: init tabel 7
     //todo: init tabel 8
     //todo: init tabel 9
@@ -115,6 +151,27 @@ public class Database extends SQLiteOpenHelper {
                 + Table_5_col_4 + " INTEGER DEFAULT 0 ," + Table_5_col_5 + " INTEGER DEFAULT 0 ,"
                 + Table_5_col_6 + " INTEGER DEFAULT 0 ," + Table_5_col_7 + " INTEGER DEFAULT 0 primary key)");
 
+        //tabel 6
+        db.execSQL("create table " + DATABASE_table_6 + "(" + Table_6_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_6_col_2 + " INTEGER DEFAULT 0 ," + Table_6_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_6_col_4 + " INTEGER DEFAULT 0 ," + Table_6_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_6_col_6 + " INTEGER DEFAULT 0 ," + Table_6_col_7 + " INTEGER DEFAULT 0 ,"
+                + Table_6_col_8 + " INTEGER DEFAULT 0 ," + Table_6_col_9 + " INTEGER DEFAULT 0 ,"
+                + Table_6_col_10 + " INTEGER DEFAULT 0 ," + Table_6_col_11 + " INTEGER DEFAULT 0 ,"
+                + Table_6_col_12 + " INTEGER DEFAULT 0 ," + Table_6_col_13 + " INTEGER DEFAULT 0 ,"
+                + Table_6_col_14 + " INTEGER DEFAULT 0 ," + Table_6_col_15 + " INTEGER DEFAULT 0 ,"
+                + Table_6_col_16 + " INTEGER DEFAULT 0 ," + Table_6_col_17 + " INTEGER DEFAULT 0 ,"
+                + Table_6_col_18 + " INTEGER DEFAULT 0 ," + Table_6_col_19 + " INTEGER DEFAULT 0 primary key)");
+
+        //tabel 7
+        db.execSQL("create table " + DATABASE_table_7 + "(" + Table_7_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_7_col_2 + " INTEGER DEFAULT 0 ," + Table_7_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_7_col_4 + " INTEGER DEFAULT 0 ," + Table_7_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_7_col_6 + " INTEGER DEFAULT 0 ," + Table_7_col_7 + " INTEGER DEFAULT 0 ,"
+                + Table_7_col_8 + " INTEGER DEFAULT 0 ," + Table_7_col_9 + " INTEGER DEFAULT 0 ,"
+                + Table_7_col_10 + " INTEGER DEFAULT 0 ," + Table_7_col_11 + " INTEGER DEFAULT 0 ,"
+                + Table_7_col_12 + " INTEGER DEFAULT 0 primary key)");
+
     }
 
     @Override
@@ -124,5 +181,7 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_3);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_4);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_5);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_6);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_7);
     }
 }

@@ -43,7 +43,15 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_3_col_5 = "pijn_pijn_3";
     public static final String Table_3_col_6 = "pijn_id";
 
-    //todo: init tabel 4
+    //tabel 4
+    public static final String DATABASE_table_4 = "tijd_symp";
+    public static final String Table_4_col_1 = "tijd_symp_na_1_uur";
+    public static final String Table_4_col_2 = "tijd_symp_1_tot_4_uur";
+    public static final String Table_4_col_3 = "tijd_symp_na_4_uur";
+    public static final String Table_4_col_4 = "tijd_symp_na_12_uur";
+    public static final String Table_4_col_5 = "tijd_symp_meer_dan_2_dagen";
+    public static final String Table_4_col_6 = "tijd_symp_snelle_opname";
+    public static final String Table_4_col_7 = "tijd_symp_id";
     //todo: init tabel 5
     //todo: init tabel 6
     //todo: init tabel 7
@@ -85,6 +93,12 @@ public class Database extends SQLiteOpenHelper {
                 + Table_3_col_4 + " INTEGER DEFAULT 0 ," + Table_3_col_5 + " INTEGER DEFAULT 0 ,"
                 + Table_3_col_6 + " INTEGER DEFAULT 0 primary key)");
 
+        //tabel 4
+        db.execSQL("create table " + DATABASE_table_4 + "(" + Table_4_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_4_col_2 + " INTEGER DEFAULT 0 ," + Table_4_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_4_col_4 + " INTEGER DEFAULT 0 ," + Table_4_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_4_col_6 + " INTEGER DEFAULT 0 ," + Table_4_col_7 + " INTEGER DEFAULT 0 primary key)");
+
     }
 
     @Override
@@ -92,5 +106,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_1);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_2);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_3);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_4);
     }
 }

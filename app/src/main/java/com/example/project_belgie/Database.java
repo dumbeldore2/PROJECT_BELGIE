@@ -100,8 +100,19 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_7_col_11 = "ademhaling_sliklast";
     public static final String Table_7_col_12 = "ademhaling_id";
 
-    //todo: init tabel 7
-    //todo: init tabel 8
+    //tabel 8
+    public static final String DATABASE_table_8 = "extra_info";
+    public static final String Table_8_col_1 = "extra_info_huisarts_ter_plaatste";
+    public static final String Table_8_col_2 = "extra_info_mug_vertrokken";
+    public static final String Table_8_col_3 = "extra_info_zw_vertrokken";
+    public static final String Table_8_col_4 = "extra_info_rea_gestart";
+    public static final String Table_8_col_5 = "extra_info_phone_cpr";
+    public static final String Table_8_col_6 = "extra_info_einde_ect";
+    public static final String Table_8_col_7 = "extra_info_z_huis_meerwaarde";
+    public static final String Table_8_col_8 = "extra_info_pit_meerwaarde";
+    public static final String Table_8_col_9 = "extra_info_ha_meerwaarde";
+    public static final String Table_8_col_10 = "extra_info_id";
+
     //todo: init tabel 9
     //todo: init tabel 10
     //todo: init tabel 11
@@ -172,6 +183,14 @@ public class Database extends SQLiteOpenHelper {
                 + Table_7_col_10 + " INTEGER DEFAULT 0 ," + Table_7_col_11 + " INTEGER DEFAULT 0 ,"
                 + Table_7_col_12 + " INTEGER DEFAULT 0 primary key)");
 
+        //tabel 8
+        db.execSQL("create table " + DATABASE_table_8 + "(" + Table_8_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_8_col_2 + " INTEGER DEFAULT 0 ," + Table_8_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_8_col_4 + " INTEGER DEFAULT 0 ," + Table_8_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_8_col_6 + " INTEGER DEFAULT 0 ," + Table_8_col_7 + " INTEGER DEFAULT 0 ,"
+                + Table_8_col_8 + " INTEGER DEFAULT 0 ," + Table_8_col_9 + " INTEGER DEFAULT 0 ,"
+                + Table_8_col_10 + " INTEGER DEFAULT 0 primary key)");
+
     }
 
     @Override
@@ -183,5 +202,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_5);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_6);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_7);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_8);
     }
 }

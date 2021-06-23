@@ -169,8 +169,13 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_11_col_11 = "lichaam_bekken";
     public static final String Table_11_col_12 = "lichaam_voeten";
     public static final String Table_11_col_13 = "lichaam_id";
-    //todo: init tabel 11
-    //todo: init tabel 12
+
+    //tabel 12
+    public static final String DATABASE_table_12 = "epileptie";
+    public static final String Table_12_col_1 = "epileptie_eerste_aanval";
+    public static final String Table_12_col_2 = "epileptie_status";
+    public static final String Table_12_col_3 = "epileptie_meerdere_aanvallen";
+    public static final String Table_12_col_4 = "epileptie_id";
     //todo: init tabel 13
     //todo: init tabel 14
     //todo: init tabel 15
@@ -277,6 +282,11 @@ public class Database extends SQLiteOpenHelper {
                 + Table_11_col_10 + " INTEGER DEFAULT 0 ," + Table_11_col_11 + " INTEGER DEFAULT 0 ,"
                 + Table_11_col_12 + " INTEGER DEFAULT 0 ," + Table_11_col_13 + " INTEGER DEFAULT 0 primary key)");
 
+        //tabel 12
+        db.execSQL("create table " + DATABASE_table_12 + "(" + Table_12_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_12_col_2 + " INTEGER DEFAULT 0 ," + Table_12_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_12_col_4 + " INTEGER DEFAULT 0 primary key)");
+
     }
 
     @Override
@@ -292,5 +302,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_9);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_10);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_11);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_12);
     }
 }

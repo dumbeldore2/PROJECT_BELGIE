@@ -200,8 +200,14 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_15_col_3 = "electro_hoogspanning";
     public static final String Table_15_col_4 = "electro_id";
 
-    //todo: init tabel 16
-
+    //tabel 16
+    public static final String DATABASE_table_16 = "zwanger";
+    public static final String Table_16_col_1 = "zwanger_trim_1";
+    public static final String Table_16_col_2 = "zwanger_trim_2";
+    public static final String Table_16_col_3 = "zwanger_trim_3";
+    public static final String Table_16_col_4 = "zwanger_water_gebroken";
+    public static final String Table_16_col_5 = "zwanger_persdrang";
+    public static final String Table_16_col_6 = "zwanger_id";
 
 
     public Database(@Nullable Context context) {
@@ -276,7 +282,7 @@ public class Database extends SQLiteOpenHelper {
                 + Table_9_col_2 + " INTEGER DEFAULT 0 ," + Table_9_col_3 + " INTEGER DEFAULT 0 ,"
                 + Table_9_col_4 + " INTEGER DEFAULT 0 ," + Table_9_col_5 + " INTEGER DEFAULT 0 ,"
                 + Table_9_col_6 + " INTEGER DEFAULT 0 ," + Table_9_col_7 + " INTEGER DEFAULT 0 ,"
-                + Table_9_col_9 + " INTEGER DEFAULT 0 ," + Table_9_col_9 + " INTEGER DEFAULT 0 ,"
+                + Table_9_col_8 + " INTEGER DEFAULT 0 ," + Table_9_col_9 + " INTEGER DEFAULT 0 ,"
                 + Table_9_col_10 + " INTEGER DEFAULT 0 ," + Table_9_col_11 + " INTEGER DEFAULT 0 ,"
                 + Table_9_col_12 + " INTEGER DEFAULT 0 ," + Table_9_col_13 + " INTEGER DEFAULT 0 ,"
                 + Table_9_col_14 + " INTEGER DEFAULT 0 ," + Table_9_col_15 + " INTEGER DEFAULT 0 ,"
@@ -287,7 +293,7 @@ public class Database extends SQLiteOpenHelper {
                 + Table_10_col_2 + " INTEGER DEFAULT 0 ," + Table_10_col_3 + " INTEGER DEFAULT 0 ,"
                 + Table_10_col_4 + " INTEGER DEFAULT 0 ," + Table_10_col_5 + " INTEGER DEFAULT 0 ,"
                 + Table_10_col_6 + " INTEGER DEFAULT 0 ," + Table_10_col_7 + " INTEGER DEFAULT 0 ,"
-                + Table_10_col_9 + " INTEGER DEFAULT 0 ," + Table_10_col_9 + " INTEGER DEFAULT 0 ,"
+                + Table_10_col_8 + " INTEGER DEFAULT 0 ," + Table_10_col_9 + " INTEGER DEFAULT 0 ,"
                 + Table_10_col_10 + " INTEGER DEFAULT 0 ," + Table_10_col_11 + " INTEGER DEFAULT 0 ,"
                 + Table_10_col_12 + " INTEGER DEFAULT 0 ," + Table_10_col_13 + " INTEGER DEFAULT 0 ,"
                 + Table_10_col_14 + " INTEGER DEFAULT 0 ," + Table_10_col_15 + " INTEGER DEFAULT 0 ,"
@@ -322,6 +328,13 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("create table " + DATABASE_table_15 + "(" + Table_15_col_1 + " INTEGER DEFAULT 0 ,"
                 + Table_15_col_2 + " INTEGER DEFAULT 0 ," + Table_15_col_3 + " INTEGER DEFAULT 0 ,"
                 + Table_15_col_4 + " INTEGER DEFAULT 0 primary key)");
+
+        //tabel 16
+        db.execSQL("create table " + DATABASE_table_16 + "(" + Table_16_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_16_col_2 + " INTEGER DEFAULT 0 ," + Table_16_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_16_col_4 + " INTEGER DEFAULT 0 ," + Table_16_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_16_col_6 + " INTEGER DEFAULT 0 primary key)");
+
     }
 
     @Override
@@ -341,5 +354,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_13);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_14);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_15);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_16);
     }
 }

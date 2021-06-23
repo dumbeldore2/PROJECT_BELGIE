@@ -183,7 +183,16 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_13_col_2 = "glyceamie_hyper";
     public static final String Table_13_col_3 = "glyceamie_id";
 
-    //todo: init tabel 14
+    //tabel 14
+    public static final String DATABASE_table_14 = "trauma";
+    public static final String Table_14_col_1 = "trauma_wonde";
+    public static final String Table_14_col_2 = "trauma_brandwonde";
+    public static final String Table_14_col_3 = "trauma_breuk_open";
+    public static final String Table_14_col_4 = "trauma_breuk_gesloten";
+    public static final String Table_14_col_5 = "trauma_eject_H_E_T";
+    public static final String Table_14_col_6 = "trauma_gekneld";
+    public static final String Table_14_col_7 = "trauma_buik";
+
     //todo: init tabel 15
     //todo: init tabel 16
 
@@ -297,6 +306,11 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("create table " + DATABASE_table_13 + "(" + Table_13_col_1 + " INTEGER DEFAULT 0 ,"
                 + Table_13_col_2 + " INTEGER DEFAULT 0 ," + Table_13_col_3 + " INTEGER DEFAULT 0 primary key)");
 
+        //tabel 14
+        db.execSQL("create table " + DATABASE_table_14 + "(" + Table_14_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_14_col_2 + " INTEGER DEFAULT 0 ," + Table_14_col_3 + " INTEGER DEFAULT 0 ,"
+                + Table_14_col_4 + " INTEGER DEFAULT 0 ," + Table_14_col_5 + " INTEGER DEFAULT 0 ,"
+                + Table_14_col_6 + " INTEGER DEFAULT 0 ," + Table_14_col_7 + " INTEGER DEFAULT 0 primary key)");
     }
 
     @Override
@@ -314,5 +328,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_11);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_12);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_13);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_14);
     }
 }

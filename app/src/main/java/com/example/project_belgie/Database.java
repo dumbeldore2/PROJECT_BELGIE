@@ -1,6 +1,8 @@
 package com.example.project_belgie;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -9,7 +11,7 @@ import androidx.annotation.Nullable;
 public class Database extends SQLiteOpenHelper {
 
     //db naam
-    public static String DATABASE_NAME = "database_project_pp_mobile_app.db";
+    public static String DATABASE_NAME = "database_project_belgie.db";
 
     //tabel 1
     public static final String DATABASE_table_1 = "persoon";
@@ -18,9 +20,9 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_1_col_3 = "persoon_kind";
     public static final String Table_1_col_4 = "persoon_man";
     public static final String Table_1_col_5 = "persoon_vrouw";
-    public static final String Table_1_col_6 = "persoon_20-40_jaar";
-    public static final String Table_1_col_7 = "persoon_40-60_jaar";
-    public static final String Table_1_col_8 = "persoon_60-80_jaar";
+    public static final String Table_1_col_6 = "persoon_20_40_jaar";
+    public static final String Table_1_col_7 = "persoon_40_60_jaar";
+    public static final String Table_1_col_8 = "persoon_60_80_jaar";
     public static final String Table_1_col_9 = "persoon_id";
 
     //tabel 2
@@ -192,6 +194,7 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_14_col_5 = "trauma_eject_H_E_T";
     public static final String Table_14_col_6 = "trauma_gekneld";
     public static final String Table_14_col_7 = "trauma_buik";
+    public static final String Table_14_col_8 = "trauma_id";
 
     //tabel 15
     public static final String DATABASE_table_15 = "electro";
@@ -209,9 +212,8 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_16_col_5 = "zwanger_persdrang";
     public static final String Table_16_col_6 = "zwanger_id";
 
-
     public Database(@Nullable Context context) {
-        super(context, DATABASE_NAME, null, 1);
+        super(context, DATABASE_NAME, null ,1);
     }
 
     @Override
@@ -322,7 +324,8 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("create table " + DATABASE_table_14 + "(" + Table_14_col_1 + " INTEGER DEFAULT 0 ,"
                 + Table_14_col_2 + " INTEGER DEFAULT 0 ," + Table_14_col_3 + " INTEGER DEFAULT 0 ,"
                 + Table_14_col_4 + " INTEGER DEFAULT 0 ," + Table_14_col_5 + " INTEGER DEFAULT 0 ,"
-                + Table_14_col_6 + " INTEGER DEFAULT 0 ," + Table_14_col_7 + " INTEGER DEFAULT 0 primary key)");
+                + Table_14_col_6 + " INTEGER DEFAULT 0 ," + Table_14_col_7 + " INTEGER DEFAULT 0 ,"
+                + Table_14_col_8 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 15
         db.execSQL("create table " + DATABASE_table_15 + "(" + Table_15_col_1 + " INTEGER DEFAULT 0 ,"
@@ -355,5 +358,172 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_14);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_15);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_16);
+    }
+
+
+    public int IDMAKERTABLE1() {
+
+        int uit = -1;
+
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery(
+                "select * from " + DATABASE_table_1, null
+        );
+        if (cursor.getCount() == 0){
+            uit = 0;
+        } else {
+            Cursor cursor1 = sqLiteDatabase.rawQuery("select max(" + Table_1_col_9 + " ) from " + DATABASE_table_1 + "" ,null);
+            StringBuffer stringBuffer = new StringBuffer();
+            if (cursor1.moveToFirst()){
+                stringBuffer.append(cursor1.getString(0));
+                uit = Integer.parseInt(stringBuffer.toString()) +1;
+            }
+        }
+        return uit;
+    }
+
+
+    public void addToTabel1() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+            contentValues.put(Table_1_col_9, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_1, null, contentValues);
+    }
+
+    public void addToTabel2() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+            contentValues.put(Table_2_col_8, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_2, null, contentValues);
+    }
+
+    public void addToTabel3() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+            contentValues.put(Table_3_col_6, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_3, null, contentValues);
+    }
+
+    public void addToTabel4() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_4_col_7, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_4, null, contentValues);
+    }
+
+    public void addToTabel5() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_5_col_7, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_5, null, contentValues);
+    }
+
+    public void addToTabel6() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_6_col_19, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_6, null, contentValues);
+    }
+
+    public void addToTabel7() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_7_col_12, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_7, null, contentValues);
+    }
+
+    public void addToTabel8() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_8_col_10, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_8, null, contentValues);
+    }
+
+    public void addToTabel9() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_9_col_17, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_9, null, contentValues);
+    }
+
+    public void addToTabel10() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_10_col_18, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_10, null, contentValues);
+    }
+
+    public void addToTabel11() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_11_col_13, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_11, null, contentValues);
+    }
+
+    public void addToTabel12() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_12_col_4, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_12, null, contentValues);
+    }
+
+    public void addToTabel13() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_13_col_3, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_13, null, contentValues);
+    }
+
+    public void addToTabel14() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_14_col_8, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_14, null, contentValues);
+    }
+
+    public void addToTabel15() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_15_col_4, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_15, null, contentValues);
+    }
+
+    public void addToTabel16() {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(Table_16_col_6, IDMAKERTABLE1());
+
+        sqLiteDatabase.insert(DATABASE_table_16, null, contentValues);
     }
 }

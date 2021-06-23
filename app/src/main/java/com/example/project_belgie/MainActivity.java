@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
         textView16 = findViewById(R.id.text16);
 
         //database conecteren
-        database = new Database(this);
-        //todo : verander de namen in een soort van lijstview waardoor je direct kan zien wat je preventief hebt aangeduid
+        database = new Database(MainActivity.this);
+
         //functies
         click_1();
         click_2();
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         click_14();
         click_15();
         click_16();
+        db_fun1();
     }
 
     public void click_1(){
@@ -220,5 +221,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void db_fun1(){
+        database.addToTabel1();
+        database.addToTabel2();
+        database.addToTabel3();
+        database.addToTabel4();
+        database.addToTabel5();
+        database.addToTabel6();
+        database.addToTabel7();
+        database.addToTabel8();
+        database.addToTabel9();
+        database.addToTabel10();
+        database.addToTabel11();
+        database.addToTabel12();
+        database.addToTabel13();
+        database.addToTabel14();
+        database.addToTabel15();
+        database.addToTabel16();
     }
 }

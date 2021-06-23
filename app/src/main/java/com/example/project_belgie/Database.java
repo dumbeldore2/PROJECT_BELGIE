@@ -176,7 +176,13 @@ public class Database extends SQLiteOpenHelper {
     public static final String Table_12_col_2 = "epileptie_status";
     public static final String Table_12_col_3 = "epileptie_meerdere_aanvallen";
     public static final String Table_12_col_4 = "epileptie_id";
-    //todo: init tabel 13
+
+    //tabel 13
+    public static final String DATABASE_table_13 = "glyceamie";
+    public static final String Table_13_col_1 = "glyceamie_hypo";
+    public static final String Table_13_col_2 = "glyceamie_hyper";
+    public static final String Table_13_col_3 = "glyceamie_id";
+
     //todo: init tabel 14
     //todo: init tabel 15
     //todo: init tabel 16
@@ -287,6 +293,10 @@ public class Database extends SQLiteOpenHelper {
                 + Table_12_col_2 + " INTEGER DEFAULT 0 ," + Table_12_col_3 + " INTEGER DEFAULT 0 ,"
                 + Table_12_col_4 + " INTEGER DEFAULT 0 primary key)");
 
+        //tabel 13
+        db.execSQL("create table " + DATABASE_table_13 + "(" + Table_13_col_1 + " INTEGER DEFAULT 0 ,"
+                + Table_13_col_2 + " INTEGER DEFAULT 0 ," + Table_13_col_3 + " INTEGER DEFAULT 0 primary key)");
+
     }
 
     @Override
@@ -303,5 +313,6 @@ public class Database extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_10);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_11);
         db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_12);
+        db.execSQL("DROP TABLE IF EXISTS " + DATABASE_table_13);
     }
 }

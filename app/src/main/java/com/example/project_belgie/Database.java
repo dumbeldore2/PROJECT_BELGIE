@@ -563,7 +563,12 @@ public class Database extends SQLiteOpenHelper {
         return  uit;
     }
 
-    public void setTable_1_col_1(String naam, int id){
-
+    public void setTable_1_col_1(String naam){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Table_1_col_1,naam);
+        contentValues.put(Table_1_col_9, IDMAKERTABLEINFINITY());
+        sqLiteDatabase.update(DATABASE_table_1,contentValues,Table_1_col_9 + " == ?", new String[] {IDMAKERTABLEINFINITY() +""});
     }
+
 }

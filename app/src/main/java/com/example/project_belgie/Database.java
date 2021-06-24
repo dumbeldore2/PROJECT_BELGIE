@@ -556,6 +556,7 @@ public class Database extends SQLiteOpenHelper {
         StringBuffer stringBuffer = new StringBuffer();
         if (cursor1.moveToFirst()){
             stringBuffer.append(cursor1.getString(0));
+
             if (stringBuffer.toString().length() != 0){
                 uit = stringBuffer.toString();
             }

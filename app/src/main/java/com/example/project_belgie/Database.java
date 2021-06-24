@@ -382,6 +382,27 @@ public class Database extends SQLiteOpenHelper {
         return uit;
     }
 
+    public int IDMAKERTABLEINFINITY() {
+
+        int uit = -1;
+
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery(
+                "select * from " + DATABASE_table_1, null
+        );
+        if (cursor.getCount() == 0){
+            uit = 0;
+        } else {
+            Cursor cursor1 = sqLiteDatabase.rawQuery("select max(" + Table_1_col_9 + " ) from " + DATABASE_table_1 + "" ,null);
+            StringBuffer stringBuffer = new StringBuffer();
+            if (cursor1.moveToFirst()){
+                stringBuffer.append(cursor1.getString(0));
+                uit = Integer.parseInt(stringBuffer.toString());
+            }
+        }
+        return uit;
+    }
+
 
     public void addToTabel1() {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
@@ -396,7 +417,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-            contentValues.put(Table_2_col_8, IDMAKERTABLE1());
+            contentValues.put(Table_2_col_8, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_2, null, contentValues);
     }
@@ -405,7 +426,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-            contentValues.put(Table_3_col_6, IDMAKERTABLE1());
+            contentValues.put(Table_3_col_6, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_3, null, contentValues);
     }
@@ -414,7 +435,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_4_col_7, IDMAKERTABLE1());
+        contentValues.put(Table_4_col_7, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_4, null, contentValues);
     }
@@ -423,7 +444,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_5_col_7, IDMAKERTABLE1());
+        contentValues.put(Table_5_col_7, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_5, null, contentValues);
     }
@@ -432,7 +453,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_6_col_19, IDMAKERTABLE1());
+        contentValues.put(Table_6_col_19, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_6, null, contentValues);
     }
@@ -441,7 +462,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_7_col_12, IDMAKERTABLE1());
+        contentValues.put(Table_7_col_12, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_7, null, contentValues);
     }
@@ -450,7 +471,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_8_col_10, IDMAKERTABLE1());
+        contentValues.put(Table_8_col_10, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_8, null, contentValues);
     }
@@ -459,7 +480,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_9_col_17, IDMAKERTABLE1());
+        contentValues.put(Table_9_col_17, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_9, null, contentValues);
     }
@@ -468,7 +489,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_10_col_18, IDMAKERTABLE1());
+        contentValues.put(Table_10_col_18, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_10, null, contentValues);
     }
@@ -477,7 +498,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_11_col_13, IDMAKERTABLE1());
+        contentValues.put(Table_11_col_13, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_11, null, contentValues);
     }
@@ -486,7 +507,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_12_col_4, IDMAKERTABLE1());
+        contentValues.put(Table_12_col_4, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_12, null, contentValues);
     }
@@ -495,7 +516,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_13_col_3, IDMAKERTABLE1());
+        contentValues.put(Table_13_col_3, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_13, null, contentValues);
     }
@@ -504,7 +525,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_14_col_8, IDMAKERTABLE1());
+        contentValues.put(Table_14_col_8, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_14, null, contentValues);
     }
@@ -513,7 +534,7 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_15_col_4, IDMAKERTABLE1());
+        contentValues.put(Table_15_col_4, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_15, null, contentValues);
     }
@@ -522,8 +543,27 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
 
-        contentValues.put(Table_16_col_6, IDMAKERTABLE1());
+        contentValues.put(Table_16_col_6, IDMAKERTABLEINFINITY());
 
         sqLiteDatabase.insert(DATABASE_table_16, null, contentValues);
+    }
+
+    //get tabel 1
+    public String getTable_1_col_1(){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        String uit = "";
+        Cursor cursor1 = sqLiteDatabase.rawQuery("select max(" + Table_1_col_1 + " ) from " + DATABASE_table_1 + "" ,null);
+        StringBuffer stringBuffer = new StringBuffer();
+        if (cursor1.moveToFirst()){
+            stringBuffer.append(cursor1.getString(0));
+            if (stringBuffer.toString().length() != 0){
+                uit = stringBuffer.toString();
+            }
+        }
+        return  uit;
+    }
+
+    public void setTable_1_col_1(String naam, int id){
+
     }
 }

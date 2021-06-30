@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+
 public class Database extends SQLiteOpenHelper {
 
     //db naam
@@ -548,7 +550,8 @@ public class Database extends SQLiteOpenHelper {
         sqLiteDatabase.insert(DATABASE_table_16, null, contentValues);
     }
 
-    //get tabel 1
+    //alles te maken met tabel 1
+
     public String getTable_1_col_1(){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         String uit = "";
@@ -572,4 +575,20 @@ public class Database extends SQLiteOpenHelper {
         sqLiteDatabase.update(DATABASE_table_1,contentValues,Table_1_col_9 + " == ?", new String[] {IDMAKERTABLEINFINITY() +""});
     }
 
+    public ArrayList<Integer> Table_1_col_2_tot_8() {
+        ArrayList<Integer> arrayList_uit = new ArrayList<>();
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+
+        //tabel 1
+        Cursor cursor1 = sqLiteDatabase.rawQuery("select " + Table_1_col_2 + " , " + Table_1_col_3 +" , " + Table_1_col_4 +" , " + Table_1_col_5 + " , " + Table_1_col_6 + ", " + Table_1_col_8 + " from " + DATABASE_table_1 + "", null);
+        StringBuffer stringBuffer1 = new StringBuffer();
+        for (int i = 0 ; i < 7 ; i++){
+            if (cursor1.moveToPosition(i)) {
+                stringBuffer1.append(cursor1.getString(0));
+                arrayList_uit.add(Integer.parseInt(stringBuffer1.toString()));
+
+            }
+        }
+        return arrayList_uit;
+    }
 }

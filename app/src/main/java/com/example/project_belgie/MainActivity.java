@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView1,textView2,textView3,textView4,textView5
             ,textView6,textView7,textView8,textView9,textView10
             ,textView11,textView12,textView13,textView14,textView15
-            ,textView16;
+            ,textView16,textView17;
 
     //database initen
     Database database;
@@ -39,9 +39,12 @@ public class MainActivity extends AppCompatActivity {
         textView14 = findViewById(R.id.text14);
         textView15 = findViewById(R.id.text15);
         textView16 = findViewById(R.id.text16);
+        textView17 = findViewById(R.id.text17);
 
         //database conecteren
         database = new Database(MainActivity.this);
+
+        System.out.println(database.IDMAKERTABLE1());
 
         //functies
         click_1();
@@ -60,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         click_14();
         click_15();
         click_16();
-        db_fun1();
+        click_17();
     }
 
     public void click_1(){
@@ -218,6 +221,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),MainActivity17.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void click_17(){
+        textView17.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+
+                db_fun1();
+
                 startActivity(intent);
             }
         });

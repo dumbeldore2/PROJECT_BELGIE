@@ -52,7 +52,7 @@ public class MainActivity2 extends AppCompatActivity {
         click_9();
         click_10();
         sout_fun();
-
+        System.out.println(database.Table_1_col_2_tot_8().size());
     }
 
     public void click_back_1(){
@@ -80,15 +80,15 @@ public class MainActivity2 extends AppCompatActivity {
         textView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<Integer> arrayList;
+                ArrayList<String> arrayList;
                 arrayList = new ArrayList<>();
-                arrayList.add(1);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
+                arrayList.add("true");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -97,15 +97,15 @@ public class MainActivity2 extends AppCompatActivity {
         textView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<Integer> arrayList;
+                ArrayList<String> arrayList;
                 arrayList = new ArrayList<>();
-                arrayList.add(0);
-                arrayList.add(1);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
+                arrayList.add("true");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -114,15 +114,15 @@ public class MainActivity2 extends AppCompatActivity {
         textView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<Integer> arrayList;
+                ArrayList<String> arrayList;
                 arrayList = new ArrayList<>();
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(1);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
+                arrayList.add("true");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -131,15 +131,15 @@ public class MainActivity2 extends AppCompatActivity {
         textView7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<Integer> arrayList;
+                ArrayList<String> arrayList;
                 arrayList = new ArrayList<>();
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(1);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
+                arrayList.add("true");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -148,15 +148,15 @@ public class MainActivity2 extends AppCompatActivity {
         textView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<Integer> arrayList;
+                ArrayList<String> arrayList;
                 arrayList = new ArrayList<>();
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(1);
-                arrayList.add(0);
-                arrayList.add(0);
+                arrayList.add("true");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -165,15 +165,15 @@ public class MainActivity2 extends AppCompatActivity {
         textView9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<Integer> arrayList;
+                ArrayList<String> arrayList;
                 arrayList = new ArrayList<>();
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(1);
-                arrayList.add(0);
+                arrayList.add("true");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -182,15 +182,15 @@ public class MainActivity2 extends AppCompatActivity {
         textView10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<Integer> arrayList;
+                ArrayList<String> arrayList;
                 arrayList = new ArrayList<>();
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(0);
-                arrayList.add(1);
+                arrayList.add("true");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
+                arrayList.add("false");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });

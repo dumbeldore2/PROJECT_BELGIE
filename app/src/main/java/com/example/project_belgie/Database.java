@@ -222,10 +222,10 @@ public class Database extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         //tabel 1
         db.execSQL("create table " + DATABASE_table_1 + "(" + Table_1_col_1 + " TEXT ,"
-                + Table_1_col_2 + " INTEGER DEFAULT 0 ," + Table_1_col_3 + " INTEGER DEFAULT 0 ,"
-                + Table_1_col_4 + " INTEGER DEFAULT 0 ," + Table_1_col_5 + " INTEGER DEFAULT 0 ,"
-                + Table_1_col_6 + " INTEGER DEFAULT 0 ," + Table_1_col_7 + " INTEGER DEFAULT 0 ,"
-                + Table_1_col_8 + " INTEGER DEFAULT 0 ," + Table_1_col_9 + " INTEGER DEFAULT 0 primary key)");
+                + Table_1_col_2 + " INTEGER DEFAULT null ," + Table_1_col_3 + " INTEGER DEFAULT null ,"
+                + Table_1_col_4 + " INTEGER DEFAULT null ," + Table_1_col_5 + " INTEGER DEFAULT null ,"
+                + Table_1_col_6 + " INTEGER DEFAULT null," + Table_1_col_7 + " INTEGER DEFAULT null ,"
+                + Table_1_col_8 + " INTEGER DEFAULT null ," + Table_1_col_9 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 2
         db.execSQL("create table " + DATABASE_table_2 + "(" + Table_2_col_1 + " TEXT ,"
@@ -580,12 +580,20 @@ public class Database extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
         //tabel 1
-        Cursor cursor1 = sqLiteDatabase.rawQuery("select " + Table_1_col_2 + " , " + Table_1_col_3 +" , " + Table_1_col_4 +" , " + Table_1_col_5 + " , " + Table_1_col_6 + ", " + Table_1_col_8 + " from " + DATABASE_table_1 + "", null);
+        Cursor cursor1 = sqLiteDatabase.rawQuery("select " + Table_1_col_2 + " , "
+                + Table_1_col_3 +" , " + Table_1_col_4 +" , " + Table_1_col_5 + " , "
+                + Table_1_col_6 + ",  " + Table_1_col_7 + ", " + Table_1_col_8 + " from "
+                + DATABASE_table_1 + " where " + Table_1_col_9 + " == " +IDMAKERTABLEINFINITY()+"", null);
         StringBuffer stringBuffer1 = new StringBuffer();
-        for (int i = 0 ; i < 7 ; i++){
+        for (int i = 0 ; i < 8 ; i++){
             if (cursor1.moveToPosition(i)) {
                 stringBuffer1.append(cursor1.getString(0));
-                arrayList_uit.add(Integer.parseInt(stringBuffer1.toString()));
+
+                if (stringBuffer1.toString() != null && !stringBuffer1.toString().equals("null")){
+                    arrayList_uit.add(Integer.parseInt(stringBuffer1.toString()));
+                } else {
+                    arrayList_uit.add(0);
+                }
 
             }
         }

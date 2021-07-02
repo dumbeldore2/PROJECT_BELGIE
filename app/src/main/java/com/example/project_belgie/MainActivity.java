@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
     //database initen
     Database database;
+
+    //int first
+    int first = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         database = new Database(MainActivity.this);
 
         //System.out.println(database.IDMAKERTABLE1());
-        for (int i = 0 ; i < database.getTable_1_col_1().length(); i++){
+        for (int i = 0 ; i < database.Table_1_col_2_tot_8().size(); i++){
             System.out.println(database.Table_1_col_2_tot_8().get(i));
         }
 

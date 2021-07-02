@@ -44,7 +44,10 @@ public class MainActivity extends AppCompatActivity {
         //database conecteren
         database = new Database(MainActivity.this);
 
-        System.out.println(database.IDMAKERTABLE1());
+        //System.out.println(database.IDMAKERTABLE1());
+        for (int i = 0 ; i < database.getTable_1_col_1().length(); i++){
+            System.out.println(database.Table_1_col_2_tot_8().get(i));
+        }
 
         //functies
         click_1();

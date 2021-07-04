@@ -229,9 +229,9 @@ public class Database extends SQLiteOpenHelper {
 
         //tabel 2
         db.execSQL("create table " + DATABASE_table_2 + "(" + Table_2_col_1 + " TEXT ,"
-                + Table_2_col_2 + " TEXT ," + Table_2_col_3 + " INTEGER DEFAULT 0 ,"
-                + Table_2_col_4 + " INTEGER DEFAULT 0 ," + Table_2_col_5 + " INTEGER DEFAULT 0 ,"
-                + Table_2_col_6 + " INTEGER DEFAULT 0 ," + Table_2_col_7 + " INTEGER DEFAULT 0 ,"
+                + Table_2_col_2 + " TEXT ," + Table_2_col_3 + " TEXT DEFAULT 'false' ,"
+                + Table_2_col_4 + " TEXT DEFAULT 'false' ," + Table_2_col_5 + " TEXT DEFAULT 'false' ,"
+                + Table_2_col_6 + " TEXT DEFAULT 'false' ," + Table_2_col_7 + " TEXT DEFAULT 'false' ,"
                 + Table_2_col_8 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 3
@@ -555,7 +555,7 @@ public class Database extends SQLiteOpenHelper {
     public String getTable_1_col_1(){
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         String uit = "";
-        Cursor cursor1 = sqLiteDatabase.rawQuery("select max(" + Table_1_col_1 + " ) from " + DATABASE_table_1 + "" ,null);
+        Cursor cursor1 = sqLiteDatabase.rawQuery("select "+ Table_1_col_1 + " from " + DATABASE_table_1 + " where "+ Table_1_col_9 + " == " + IDMAKERTABLEINFINITY()+ "" ,null);
         StringBuffer stringBuffer = new StringBuffer();
         if (cursor1.moveToFirst()){
             stringBuffer.append(cursor1.getString(0));

@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class MainActivity2 extends AppCompatActivity {
 
     //textviews initen
-    TextView textView1,textView4,textView5,textView6,textView7,textView8,textView9,textView10;
+    TextView textView1,textView3,textView4,textView5,textView6,textView7,textView8,textView9,textView10;
 
     //database initen
     Database database;
@@ -32,6 +32,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         //textviews connecteren
         textView1 = findViewById(R.id.text1);
+        textView3 = findViewById(R.id.text3);
         textView4 = findViewById(R.id.text4);
         textView5 = findViewById(R.id.text5);
         textView6 = findViewById(R.id.text6);
@@ -67,6 +68,9 @@ public class MainActivity2 extends AppCompatActivity {
         color_changer_fun(textView8,4);
         color_changer_fun(textView9,5);
         color_changer_fun(textView10,6);
+
+        //naam verandere functie
+        change_naam();
     }
 
     public void click_back_1(){
@@ -208,6 +212,13 @@ public class MainActivity2 extends AppCompatActivity {
             textView.setBackgroundResource(R.drawable.border_1);
         } else {
             textView.setBackgroundColor(Color.parseColor("#C4C4C4"));
+        }
+    }
+
+    public void change_naam(){
+        if(!database.getTable_1_col_1().isEmpty() && database.getTable_1_col_1() != null && !database.getTable_1_col_1().equals("null")){
+            editText1.setText(database.getTable_1_col_1());
+            textView3.setBackgroundResource(R.drawable.border_1);
         }
     }
 }

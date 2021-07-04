@@ -3,6 +3,7 @@ package com.example.project_belgie;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -57,8 +58,15 @@ public class MainActivity2 extends AppCompatActivity {
         click_8();
         click_9();
         click_10();
-        sout_fun();
-        System.out.println(database.IDMAKERTABLEINFINITY());
+
+        //default color changes voor d textviews
+        color_changer_fun(textView4,0);
+        color_changer_fun(textView5,1);
+        color_changer_fun(textView6,2);
+        color_changer_fun(textView7,3);
+        color_changer_fun(textView8,4);
+        color_changer_fun(textView9,5);
+        color_changer_fun(textView10,6);
     }
 
     public void click_back_1(){
@@ -88,10 +96,13 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(0).equals("false")){
                     arrayList.set(0,"true");
+                    color_changer_fun(textView4,0);
                 }   else    {
                     arrayList.set(0,"false");
+                    color_changer_fun(textView4,0);
                 }
                 database.setTable_1_col_2_tot_8(arrayList);
+                System.out.println(arrayList.get(0));
             }
         });
     }
@@ -101,9 +112,12 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(1).equals("false")){
                     arrayList.set(1,"true");
+                    color_changer_fun(textView5,1);
                 }   else    {
                     arrayList.set(1,"false");
-                }                database.setTable_1_col_2_tot_8(arrayList);
+                    color_changer_fun(textView5,1);
+                }
+                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -113,9 +127,12 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(2).equals("false")){
                     arrayList.set(2,"true");
+                    color_changer_fun(textView6,2);
                 }   else    {
                     arrayList.set(2,"false");
-                }                database.setTable_1_col_2_tot_8(arrayList);
+                    color_changer_fun(textView6,2);
+                }
+                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -125,9 +142,12 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(3).equals("false")){
                     arrayList.set(3,"true");
+                    color_changer_fun(textView7,3);
                 }   else    {
                     arrayList.set(3,"false");
-                }                database.setTable_1_col_2_tot_8(arrayList);
+                    color_changer_fun(textView7,3);
+                }
+                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -137,9 +157,12 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(4).equals("false")){
                     arrayList.set(4,"true");
+                    color_changer_fun(textView8,4);
                 }   else    {
                     arrayList.set(4,"false");
-                }                database.setTable_1_col_2_tot_8(arrayList);
+                    color_changer_fun(textView8,4);
+                }
+                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -149,9 +172,12 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(5).equals("false")){
                     arrayList.set(5,"true");
+                    color_changer_fun(textView9,5);
                 }   else    {
                     arrayList.set(5,"false");
-                }                database.setTable_1_col_2_tot_8(arrayList);
+                    color_changer_fun(textView9,5);
+                }
+                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -161,9 +187,12 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(6).equals("false")){
                     arrayList.set(6,"true");
+                    color_changer_fun(textView10,6);
                 }   else    {
                     arrayList.set(6,"false");
-                }                database.setTable_1_col_2_tot_8(arrayList);
+                    color_changer_fun(textView10,6);
+                }
+                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -171,6 +200,14 @@ public class MainActivity2 extends AppCompatActivity {
     public void sout_fun(){
         for (int i = 0 ; i < arrayList.size() ; i++){
             System.out.println(arrayList.get(i));
+        }
+    }
+
+    public void color_changer_fun(TextView textView , int id){
+        if (arrayList.get(id).equals("true")){
+            textView.setBackgroundResource(R.drawable.border_1);
+        } else {
+            textView.setBackgroundColor(Color.parseColor("#C4C4C4"));
         }
     }
 }

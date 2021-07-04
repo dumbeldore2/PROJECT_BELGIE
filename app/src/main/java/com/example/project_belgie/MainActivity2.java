@@ -21,6 +21,9 @@ public class MainActivity2 extends AppCompatActivity {
     //editview ininten
     EditText editText1;
 
+    //arraylist
+    ArrayList<String> arrayList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,9 @@ public class MainActivity2 extends AppCompatActivity {
         //eduttexten conecten
         editText1 = findViewById(R.id.editText1);
 
+        // araylist conecten
+        arrayList = database.Table_1_col_2_tot_8();
+
         //functies
         click_back_1();
         click_4();
@@ -52,7 +58,7 @@ public class MainActivity2 extends AppCompatActivity {
         click_9();
         click_10();
         sout_fun();
-        System.out.println(database.Table_1_col_2_tot_8().size());
+        System.out.println(database.IDMAKERTABLEINFINITY());
     }
 
     public void click_back_1(){
@@ -80,15 +86,7 @@ public class MainActivity2 extends AppCompatActivity {
         textView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<String> arrayList;
-                arrayList = new ArrayList<>();
-                arrayList.add("true");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
+                arrayList.set(0,"true");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -97,15 +95,7 @@ public class MainActivity2 extends AppCompatActivity {
         textView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<String> arrayList;
-                arrayList = new ArrayList<>();
-                arrayList.add("true");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
+                arrayList.set(1,"true");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -114,15 +104,7 @@ public class MainActivity2 extends AppCompatActivity {
         textView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<String> arrayList;
-                arrayList = new ArrayList<>();
-                arrayList.add("true");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
+                arrayList.set(2,"true");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -131,15 +113,7 @@ public class MainActivity2 extends AppCompatActivity {
         textView7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<String> arrayList;
-                arrayList = new ArrayList<>();
-                arrayList.add("true");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
+                arrayList.set(3,"true");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -148,15 +122,7 @@ public class MainActivity2 extends AppCompatActivity {
         textView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<String> arrayList;
-                arrayList = new ArrayList<>();
-                arrayList.add("true");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
+                arrayList.set(4,"true");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -165,15 +131,7 @@ public class MainActivity2 extends AppCompatActivity {
         textView9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<String> arrayList;
-                arrayList = new ArrayList<>();
-                arrayList.add("true");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
+                arrayList.set(5,"true");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -182,23 +140,15 @@ public class MainActivity2 extends AppCompatActivity {
         textView10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<String> arrayList;
-                arrayList = new ArrayList<>();
-                arrayList.add("true");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
-                arrayList.add("false");
+                arrayList.set(6,"true");
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
 
     public void sout_fun(){
-        for (int i = 0 ; i < database.Table_1_col_2_tot_8().size() ; i++){
-            System.out.println(database.Table_1_col_2_tot_8().get(i));
+        for (int i = 0 ; i < arrayList.size() ; i++){
+            System.out.println(arrayList.get(i));
         }
     }
 }

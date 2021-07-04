@@ -593,9 +593,9 @@ public class Database extends SQLiteOpenHelper {
         Cursor cursor2 = sqLiteDatabase.rawQuery("select " + Table_1_col_3 + " from "
                 + DATABASE_table_1 + " where " + Table_1_col_9 + " == " +IDMAKERTABLEINFINITY()+"", null);
 
-            if (cursor1.moveToFirst()) {
+            if (cursor2.moveToFirst()) {
                 StringBuffer stringBuffer1 = new StringBuffer();
-                stringBuffer1.append(cursor1.getString(0));
+                stringBuffer1.append(cursor2.getString(0));
                 arrayList_uit.add(stringBuffer1.toString());
             }
 
@@ -603,9 +603,9 @@ public class Database extends SQLiteOpenHelper {
         Cursor cursor3 = sqLiteDatabase.rawQuery("select " + Table_1_col_4 + " from "
                 + DATABASE_table_1 + " where " + Table_1_col_9 + " == " +IDMAKERTABLEINFINITY()+"", null);
 
-            if (cursor1.moveToFirst()) {
+            if (cursor3.moveToFirst()) {
                 StringBuffer stringBuffer1 = new StringBuffer();
-                stringBuffer1.append(cursor1.getString(0));
+                stringBuffer1.append(cursor3.getString(0));
                 arrayList_uit.add(stringBuffer1.toString());
             }
 
@@ -613,9 +613,9 @@ public class Database extends SQLiteOpenHelper {
         Cursor cursor4 = sqLiteDatabase.rawQuery("select " + Table_1_col_5 + " from "
                 + DATABASE_table_1 + " where " + Table_1_col_9 + " == " +IDMAKERTABLEINFINITY()+"", null);
 
-            if (cursor1.moveToFirst()) {
+            if (cursor4.moveToFirst()) {
                 StringBuffer stringBuffer1 = new StringBuffer();
-                stringBuffer1.append(cursor1.getString(0));
+                stringBuffer1.append(cursor4.getString(0));
                 arrayList_uit.add(stringBuffer1.toString());
             }
 
@@ -623,9 +623,9 @@ public class Database extends SQLiteOpenHelper {
         Cursor cursor5 = sqLiteDatabase.rawQuery("select " + Table_1_col_6 + " from "
                 + DATABASE_table_1 + " where " + Table_1_col_9 + " == " +IDMAKERTABLEINFINITY()+"", null);
 
-            if (cursor1.moveToFirst()) {
+            if (cursor5.moveToFirst()) {
                 StringBuffer stringBuffer1 = new StringBuffer();
-                stringBuffer1.append(cursor1.getString(0));
+                stringBuffer1.append(cursor5.getString(0));
                 arrayList_uit.add(stringBuffer1.toString());
             }
 
@@ -633,9 +633,9 @@ public class Database extends SQLiteOpenHelper {
         Cursor cursor6 = sqLiteDatabase.rawQuery("select " + Table_1_col_7 + " from "
                 + DATABASE_table_1 + " where " + Table_1_col_9 + " == " +IDMAKERTABLEINFINITY()+"", null);
 
-            if (cursor1.moveToFirst()) {
+            if (cursor6.moveToFirst()) {
                 StringBuffer stringBuffer1 = new StringBuffer();
-                stringBuffer1.append(cursor1.getString(0));
+                stringBuffer1.append(cursor6.getString(0));
                 arrayList_uit.add(stringBuffer1.toString());
             }
 
@@ -643,9 +643,9 @@ public class Database extends SQLiteOpenHelper {
         Cursor cursor7 = sqLiteDatabase.rawQuery("select " + Table_1_col_8 + " from "
                 + DATABASE_table_1 + " where " + Table_1_col_9 + " == " +IDMAKERTABLEINFINITY()+"", null);
 
-            if (cursor1.moveToFirst()) {
+            if (cursor7.moveToFirst()) {
                 StringBuffer stringBuffer1 = new StringBuffer();
-                stringBuffer1.append(cursor1.getString(0));
+                stringBuffer1.append(cursor7.getString(0));
                 arrayList_uit.add(stringBuffer1.toString());
             }
 

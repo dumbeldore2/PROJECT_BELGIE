@@ -86,7 +86,11 @@ public class MainActivity2 extends AppCompatActivity {
         textView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                arrayList.set(0,"true");
+                if (arrayList.get(0).equals("false")){
+                    arrayList.set(0,"true");
+                }   else    {
+                    arrayList.set(0,"false");
+                }
                 database.setTable_1_col_2_tot_8(arrayList);
             }
         });
@@ -95,8 +99,11 @@ public class MainActivity2 extends AppCompatActivity {
         textView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                arrayList.set(1,"true");
-                database.setTable_1_col_2_tot_8(arrayList);
+                if (arrayList.get(1).equals("false")){
+                    arrayList.set(1,"true");
+                }   else    {
+                    arrayList.set(1,"false");
+                }                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -104,8 +111,11 @@ public class MainActivity2 extends AppCompatActivity {
         textView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                arrayList.set(2,"true");
-                database.setTable_1_col_2_tot_8(arrayList);
+                if (arrayList.get(2).equals("false")){
+                    arrayList.set(2,"true");
+                }   else    {
+                    arrayList.set(2,"false");
+                }                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -113,8 +123,11 @@ public class MainActivity2 extends AppCompatActivity {
         textView7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                arrayList.set(3,"true");
-                database.setTable_1_col_2_tot_8(arrayList);
+                if (arrayList.get(3).equals("false")){
+                    arrayList.set(3,"true");
+                }   else    {
+                    arrayList.set(3,"false");
+                }                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -122,8 +135,11 @@ public class MainActivity2 extends AppCompatActivity {
         textView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                arrayList.set(4,"true");
-                database.setTable_1_col_2_tot_8(arrayList);
+                if (arrayList.get(4).equals("false")){
+                    arrayList.set(4,"true");
+                }   else    {
+                    arrayList.set(4,"false");
+                }                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -131,8 +147,11 @@ public class MainActivity2 extends AppCompatActivity {
         textView9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                arrayList.set(5,"true");
-                database.setTable_1_col_2_tot_8(arrayList);
+                if (arrayList.get(5).equals("false")){
+                    arrayList.set(5,"true");
+                }   else    {
+                    arrayList.set(5,"false");
+                }                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }
@@ -140,8 +159,11 @@ public class MainActivity2 extends AppCompatActivity {
         textView10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                arrayList.set(6,"true");
-                database.setTable_1_col_2_tot_8(arrayList);
+                if (arrayList.get(6).equals("false")){
+                    arrayList.set(6,"true");
+                }   else    {
+                    arrayList.set(6,"false");
+                }                database.setTable_1_col_2_tot_8(arrayList);
             }
         });
     }

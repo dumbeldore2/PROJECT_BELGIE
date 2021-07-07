@@ -7,10 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity3 extends AppCompatActivity {
+
+    //database initen
+    Database database;
 
     //textviews initen
     TextView textView1;
+    //arraylist
+    ArrayList<String> arrayList;
+    ArrayList<String> arrayList1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +27,14 @@ public class MainActivity3 extends AppCompatActivity {
 
         // texvieuws conecten
         textView1 = findViewById(R.id.text1);
+
+        //database conecten
+        database = new Database(this);
+
+        //araylisten conecten
+        arrayList = database.Table_2_col_1_tot_2();
+        arrayList1 = database.Table_2_col_3_tot_7();
+
 
         //functies
         click_1();
@@ -33,4 +49,18 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
     }
+
+    /*public void change_naam(){
+        if(!database.getTable_1_col_1().isEmpty() && database.getTable_1_col_1() != null && !database.getTable_1_col_1().equals("null")){
+            editText1.setText(database.getTable_1_col_1());
+            textView3.setBackgroundResource(R.drawable.border_1);
+        }
+    }*/
+
+    public void sout_fun(){
+        for (int i = 0 ; i < arrayList.size() ; i++){
+            System.out.println(arrayList.get(i));
+        }
+    }
+
 }

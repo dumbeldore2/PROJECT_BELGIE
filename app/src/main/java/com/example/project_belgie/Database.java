@@ -696,7 +696,7 @@ public class Database extends SQLiteOpenHelper {
     }
 
 
-    public ArrayList<String> Table_1_col_3_tot_7() {
+    public ArrayList<String> Table_2_col_3_tot_7() {
         ArrayList<String> arrayList_uit = new ArrayList<>();
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
@@ -751,5 +751,14 @@ public class Database extends SQLiteOpenHelper {
             arrayList_uit.add(stringBuffer1.toString());
         }
         return arrayList_uit;
+    }
+
+
+    public void setTable_2_col_1(String adres){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Table_2_col_1,adres);
+        contentValues.put(Table_2_col_8, IDMAKERTABLEINFINITY());
+        sqLiteDatabase.update(DATABASE_table_2,contentValues,Table_2_col_8 + " == ?", new String[] {IDMAKERTABLEINFINITY() +""});
     }
 }

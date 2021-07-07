@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         click_15();
         click_16();
         click_17();
+        //db_fun1();
     }
 
     public void click_1(){

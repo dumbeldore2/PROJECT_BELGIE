@@ -761,4 +761,11 @@ public class Database extends SQLiteOpenHelper {
         contentValues.put(Table_2_col_8, IDMAKERTABLEINFINITY());
         sqLiteDatabase.update(DATABASE_table_2,contentValues,Table_2_col_8 + " == ?", new String[] {IDMAKERTABLEINFINITY() +""});
     }
+    public void setTable_2_col_2(String gemmeente){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Table_2_col_2,gemmeente);
+        contentValues.put(Table_2_col_8, IDMAKERTABLEINFINITY());
+        sqLiteDatabase.update(DATABASE_table_2,contentValues,Table_2_col_8 + " == ?", new String[] {IDMAKERTABLEINFINITY() +""});
+    }
 }

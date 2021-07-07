@@ -667,11 +667,11 @@ public class Database extends SQLiteOpenHelper {
 
     //alles te maken met tabel 2
 
-    public ArrayList<String> Table_1_col_1_tot_2() {
+    public ArrayList<String> Table_2_col_1_tot_2() {
         ArrayList<String> arrayList_uit = new ArrayList<>();
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
-        //table 1 col 1
+        //table 2 col 1
 
         Cursor cursor1 = sqLiteDatabase.rawQuery("select " + Table_2_col_1 + " from "
                 + DATABASE_table_2 + " where " + Table_2_col_8 + " == " +IDMAKERTABLEINFINITY()+"", null);
@@ -682,7 +682,7 @@ public class Database extends SQLiteOpenHelper {
             arrayList_uit.add(stringBuffer1.toString());
         }
 
-        //table 1 col 2
+        //table 2 col 2
 
         Cursor cursor2 = sqLiteDatabase.rawQuery("select " + Table_2_col_2 + " from "
                 + DATABASE_table_2 + " where " + Table_2_col_8 + " == " +IDMAKERTABLEINFINITY()+"", null);
@@ -700,7 +700,7 @@ public class Database extends SQLiteOpenHelper {
         ArrayList<String> arrayList_uit = new ArrayList<>();
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
 
-        //table 1 col 3
+        //table 2 col 3
 
         Cursor cursor3 = sqLiteDatabase.rawQuery("select " + Table_2_col_3 + " from "
                 + DATABASE_table_2 + " where " + Table_2_col_8 + " == " + IDMAKERTABLEINFINITY() + "", null);
@@ -710,7 +710,7 @@ public class Database extends SQLiteOpenHelper {
             stringBuffer1.append(cursor3.getString(0));
             arrayList_uit.add(stringBuffer1.toString());
         }
-        //table 1 col 4
+        //table 2 col 4
 
         Cursor cursor4 = sqLiteDatabase.rawQuery("select " + Table_2_col_4 + " from "
                 + DATABASE_table_2 + " where " + Table_2_col_8 + " == " + IDMAKERTABLEINFINITY() + "", null);
@@ -720,7 +720,7 @@ public class Database extends SQLiteOpenHelper {
             stringBuffer1.append(cursor4.getString(0));
             arrayList_uit.add(stringBuffer1.toString());
         }
-        //table 1 col 5
+        //table 2 col 5
 
         Cursor cursor5 = sqLiteDatabase.rawQuery("select " + Table_2_col_5 + " from "
                 + DATABASE_table_2 + " where " + Table_2_col_8 + " == " + IDMAKERTABLEINFINITY() + "", null);
@@ -730,7 +730,7 @@ public class Database extends SQLiteOpenHelper {
             stringBuffer1.append(cursor5.getString(0));
             arrayList_uit.add(stringBuffer1.toString());
         }
-        //table 1 col 6
+        //table 2 col 6
 
         Cursor cursor6 = sqLiteDatabase.rawQuery("select " + Table_2_col_6 + " from "
                 + DATABASE_table_2 + " where " + Table_2_col_8 + " == " + IDMAKERTABLEINFINITY() + "", null);
@@ -740,7 +740,7 @@ public class Database extends SQLiteOpenHelper {
             stringBuffer1.append(cursor6.getString(0));
             arrayList_uit.add(stringBuffer1.toString());
         }
-        //table 1 col 7
+        //table 2 col 7
 
         Cursor cursor7 = sqLiteDatabase.rawQuery("select " + Table_2_col_7 + " from "
                 + DATABASE_table_2 + " where " + Table_2_col_8 + " == " + IDMAKERTABLEINFINITY() + "", null);

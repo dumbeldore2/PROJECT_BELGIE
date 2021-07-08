@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity4 extends AppCompatActivity {
 
     //init textviews
@@ -16,6 +18,12 @@ public class MainActivity4 extends AppCompatActivity {
     TextView textView5;
     TextView textView6;
     TextView textView7;
+
+    //arraylist
+    ArrayList<String> arrayList;
+
+    //database initen
+    Database database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +37,12 @@ public class MainActivity4 extends AppCompatActivity {
         textView5 = findViewById(R.id.text5);
         textView6 = findViewById(R.id.text6);
         textView7 = findViewById(R.id.text7);
+
+        //database conecten
+        database = new Database(this);
+
+        //araylisten conecten
+        arrayList = database.Table_2_col_1_tot_2();
 
         //functies
         click_back_1();
@@ -44,4 +58,90 @@ public class MainActivity4 extends AppCompatActivity {
         });
     }
 
+    //sout functies voor beide arrays
+    public void sout_fun(){
+        for (int i = 0 ; i < arrayList.size() ; i++){
+            System.out.println(arrayList.get(i));
+        }
+    }
+
+    public void click_3(){
+        textView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (arrayList.get(0).equals("false")){
+                    arrayList.set(0,"true");
+                    //color_changer_fun(textView5,0);
+                }   else    {
+                    arrayList.set(0,"false");
+                    //color_changer_fun(textView5,0);
+                }
+                database.setTable_3_col_1_tot_5(arrayList);
+            }
+        });
+    }
+
+    public void click_4(){
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (arrayList.get(1).equals("false")){
+                    arrayList.set(1,"true");
+                    //color_changer_fun(textView5,0);
+                }   else    {
+                    arrayList.set(1,"false");
+                    //color_changer_fun(textView5,0);
+                }
+                database.setTable_3_col_1_tot_5(arrayList);
+            }
+        });
+    }
+
+    public void click_5(){
+        textView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (arrayList.get(2).equals("false")){
+                    arrayList.set(2,"true");
+                    //color_changer_fun(textView5,0);
+                }   else    {
+                    arrayList.set(2,"false");
+                    //color_changer_fun(textView5,0);
+                }
+                database.setTable_3_col_1_tot_5(arrayList);
+            }
+        });
+    }
+
+    public void click_6(){
+        textView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (arrayList.get(3).equals("false")){
+                    arrayList.set(3,"true");
+                    //color_changer_fun(textView5,0);
+                }   else    {
+                    arrayList.set(3,"false");
+                    //color_changer_fun(textView5,0);
+                }
+                database.setTable_3_col_1_tot_5(arrayList);
+            }
+        });
+    }
+
+    public void click_7(){
+        textView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (arrayList.get(7).equals("false")){
+                    arrayList.set(7,"true");
+                    //color_changer_fun(textView5,0);
+                }   else    {
+                    arrayList.set(7,"false");
+                    //color_changer_fun(textView5,0);
+                }
+                database.setTable_3_col_1_tot_5(arrayList);
+            }
+        });
+    }
 }

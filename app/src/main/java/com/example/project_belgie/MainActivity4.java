@@ -43,7 +43,7 @@ public class MainActivity4 extends AppCompatActivity {
         database = new Database(this);
 
         //araylisten conecten
-        arrayList = database.Table_2_col_1_tot_2();
+        arrayList = database.Table_3_col_1_tot_5();
 
         //functies
         click_back_1();
@@ -85,10 +85,10 @@ public class MainActivity4 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(0).equals("false")){
                     arrayList.set(0,"true");
-                    //color_changer_fun(textView5,0);
+                    color_changer_fun(textView3,0);
                 }   else    {
                     arrayList.set(0,"false");
-                    //color_changer_fun(textView5,0);
+                    color_changer_fun(textView3,0);
                 }
                 database.setTable_3_col_1_tot_5(arrayList);
             }
@@ -101,10 +101,10 @@ public class MainActivity4 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(1).equals("false")){
                     arrayList.set(1,"true");
-                    //color_changer_fun(textView5,0);
+                    color_changer_fun(textView4,1);
                 }   else    {
                     arrayList.set(1,"false");
-                    //color_changer_fun(textView5,0);
+                    color_changer_fun(textView4,1);
                 }
                 database.setTable_3_col_1_tot_5(arrayList);
             }
@@ -117,10 +117,10 @@ public class MainActivity4 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(2).equals("false")){
                     arrayList.set(2,"true");
-                    //color_changer_fun(textView5,0);
+                    color_changer_fun(textView5,2);
                 }   else    {
                     arrayList.set(2,"false");
-                    //color_changer_fun(textView5,0);
+                    color_changer_fun(textView5,2);
                 }
                 database.setTable_3_col_1_tot_5(arrayList);
             }
@@ -133,10 +133,10 @@ public class MainActivity4 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList.get(3).equals("false")){
                     arrayList.set(3,"true");
-                    //color_changer_fun(textView5,0);
+                    color_changer_fun(textView6,3);
                 }   else    {
                     arrayList.set(3,"false");
-                    //color_changer_fun(textView5,0);
+                    color_changer_fun(textView6,3);
                 }
                 database.setTable_3_col_1_tot_5(arrayList);
             }
@@ -147,12 +147,12 @@ public class MainActivity4 extends AppCompatActivity {
         textView7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (arrayList.get(7).equals("false")){
-                    arrayList.set(7,"true");
-                    //color_changer_fun(textView5,0);
+                if (arrayList.get(4).equals("false")){
+                    arrayList.set(4,"true");
+                    color_changer_fun(textView7,4);
                 }   else    {
-                    arrayList.set(7,"false");
-                    //color_changer_fun(textView5,0);
+                    arrayList.set(4,"false");
+                    color_changer_fun(textView7,4);
                 }
                 database.setTable_3_col_1_tot_5(arrayList);
             }

@@ -850,4 +850,17 @@ public class Database extends SQLiteOpenHelper {
 
     }
 
+
+    public void setTable_3_col_1_tot_5(ArrayList<String> arrayList){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Table_3_col_1, arrayList.get(0));
+        contentValues.put(Table_3_col_2, arrayList.get(1));
+        contentValues.put(Table_3_col_3, arrayList.get(2));
+        contentValues.put(Table_3_col_4, arrayList.get(3));
+        contentValues.put(Table_3_col_5, arrayList.get(4));
+        contentValues.put(Table_3_col_6, IDMAKERTABLEINFINITY());
+        sqLiteDatabase.update(DATABASE_table_3,contentValues,Table_3_col_6 + " == ?", new String[] {IDMAKERTABLEINFINITY() +""});
+    }
+
 }

@@ -72,13 +72,16 @@ public class MainActivity3 extends AppCompatActivity {
         sout_fun();
         sout_fun2();
 
-
         //default color changes voor d textviews
         color_changer_fun(textView5,0);
         color_changer_fun(textView6,1);
         color_changer_fun(textView7,2);
         color_changer_fun(textView8,3);
         color_changer_fun(textView9,4);
+
+        //naam verandere functie
+        change_naam_1();
+        change_naam_2();
     }
 
     public void click_5(){
@@ -87,10 +90,10 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList1.get(0).equals("false")){
                     arrayList1.set(0,"true");
-                    color_changer_fun(textView4,0);
+                    color_changer_fun(textView5,0);
                 }   else    {
                     arrayList1.set(0,"false");
-                    color_changer_fun(textView4,0);
+                    color_changer_fun(textView5,0);
                 }
                 database.setTable_2_col_1_tot_8(arrayList, arrayList1);
             }
@@ -103,10 +106,10 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList1.get(1).equals("false")){
                     arrayList1.set(1,"true");
-                    color_changer_fun(textView4,1);
+                    color_changer_fun(textView6,1);
                 }   else    {
                     arrayList1.set(1,"false");
-                    color_changer_fun(textView4,1);
+                    color_changer_fun(textView6,1);
                 }
                 database.setTable_2_col_1_tot_8(arrayList, arrayList1);
             }
@@ -119,10 +122,10 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList1.get(2).equals("false")){
                     arrayList1.set(2,"true");
-                    color_changer_fun(textView4,2);
+                    color_changer_fun(textView7,2);
                 }   else    {
                     arrayList1.set(2,"false");
-                    color_changer_fun(textView4,2);
+                    color_changer_fun(textView7,2);
                 }
                 database.setTable_2_col_1_tot_8(arrayList, arrayList1);
             }
@@ -135,10 +138,10 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList1.get(3).equals("false")){
                     arrayList1.set(3,"true");
-                    color_changer_fun(textView4,3);
+                    color_changer_fun(textView8,3);
                 }   else    {
                     arrayList1.set(3,"false");
-                    color_changer_fun(textView4,3);
+                    color_changer_fun(textView8,3);
                 }
                 database.setTable_2_col_1_tot_8(arrayList, arrayList1);
             }
@@ -151,21 +154,27 @@ public class MainActivity3 extends AppCompatActivity {
             public void onClick(View view) {
                 if (arrayList1.get(4).equals("false")){
                     arrayList1.set(4,"true");
-                    color_changer_fun(textView4,4);
+                    color_changer_fun(textView9,4);
                 }   else    {
                     arrayList1.set(4,"false");
-                    color_changer_fun(textView4,4);
+                    color_changer_fun(textView9,4);
                 }
                 database.setTable_2_col_1_tot_8(arrayList, arrayList1);
             }
         });
     }
-    /*public void change_naam(){
-        if(!database.getTable_1_col_1().isEmpty() && database.getTable_1_col_1() != null && !database.getTable_1_col_1().equals("null")){
-            editText1.setText(database.getTable_1_col_1());
-            textView3.setBackgroundResource(R.drawable.border_1);
+    public void change_naam_1(){
+        if(!arrayList.get(0).isEmpty() && arrayList.get(0) != null && !arrayList.get(0).equals("null")){
+            editText1.setText(arrayList.get(0));
+            textView3.setBackgroundResource(R.drawable.border_2);
         }
-    }*/
+    }
+    public void change_naam_2(){
+        if(!arrayList.get(1).isEmpty() && arrayList.get(1) != null && !arrayList.get(1).equals("null")){
+            editText2.setText(arrayList.get(1));
+            textView4.setBackgroundResource(R.drawable.border_2);
+        }
+    }
 
     //sout functies voor beide arrays
     public void sout_fun(){

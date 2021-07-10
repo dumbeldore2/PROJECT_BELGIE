@@ -241,10 +241,10 @@ public class Database extends SQLiteOpenHelper {
                 + Table_3_col_6 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 4
-        db.execSQL("create table " + DATABASE_table_4 + "(" + Table_4_col_1 + " INTEGER DEFAULT 0 ,"
-                + Table_4_col_2 + " INTEGER DEFAULT 0 ," + Table_4_col_3 + " INTEGER DEFAULT 0 ,"
-                + Table_4_col_4 + " INTEGER DEFAULT 0 ," + Table_4_col_5 + " INTEGER DEFAULT 0 ,"
-                + Table_4_col_6 + " INTEGER DEFAULT 0 ," + Table_4_col_7 + " INTEGER DEFAULT 0 primary key)");
+        db.execSQL("create table " + DATABASE_table_4 + "(" + Table_4_col_1 + " TEXT DEFAULT 'false' ,"
+                + Table_4_col_2 + " TEXT DEFAULT 'false' ," + Table_4_col_3 + " TEXT DEFAULT 'false' ,"
+                + Table_4_col_4 + " TEXT DEFAULT 'false' ," + Table_4_col_5 + " TEXT DEFAULT 'false' ,"
+                + Table_4_col_6 + " TEXT DEFAULT 'false' ," + Table_4_col_7 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 5
         db.execSQL("create table " + DATABASE_table_5 + "(" + Table_5_col_1 + " INTEGER DEFAULT 0 ,"

@@ -47,9 +47,24 @@ public class MainActivity5 extends AppCompatActivity {
         //araylisten conecten
         arrayList = database.Table_4_col_1_tot_6();
 
+
+        //default color changes voor d textviews
+        color_changer_fun(textView3,0);
+        color_changer_fun(textView4,1);
+        color_changer_fun(textView5,2);
+        color_changer_fun(textView6,3);
+        color_changer_fun(textView7,4);
+        color_changer_fun(textView8,5);
+
         //functies
         click_back_1();
         //sout_fun();
+        click_3();
+        click_4();
+        click_5();
+        click_6();
+        click_7();
+        click_8();
     }
 
     //click listner wanneer er op de back word geduwd

@@ -1535,4 +1535,20 @@ public class Database extends SQLiteOpenHelper {
         }
         return arrayList_uit;
     }
+
+    public void setTable_8_col_1_tot_9(ArrayList<String> arrayList) {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Table_8_col_1, arrayList.get(0));
+        contentValues.put(Table_8_col_2, arrayList.get(1));
+        contentValues.put(Table_8_col_3, arrayList.get(2));
+        contentValues.put(Table_8_col_4, arrayList.get(3));
+        contentValues.put(Table_8_col_5, arrayList.get(4));
+        contentValues.put(Table_8_col_6, arrayList.get(5));
+        contentValues.put(Table_8_col_7, arrayList.get(6));
+        contentValues.put(Table_8_col_8, arrayList.get(7));
+        contentValues.put(Table_8_col_9, arrayList.get(8));
+        contentValues.put(Table_8_col_10, IDMAKERTABLEINFINITY());
+        sqLiteDatabase.update(DATABASE_table_8, contentValues, Table_8_col_10 + " == ?", new String[]{IDMAKERTABLEINFINITY() + ""});
+    }
 }

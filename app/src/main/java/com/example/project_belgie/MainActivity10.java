@@ -135,7 +135,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(0,"false");
                     color_changer_fun(textView3,0);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }  public void click_4(){
@@ -149,7 +149,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(1,"false");
                     color_changer_fun(textView4,1);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -164,7 +164,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(2,"false");
                     color_changer_fun(textView5,2);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -179,7 +179,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(3,"false");
                     color_changer_fun(textView6,3);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -194,7 +194,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(4,"false");
                     color_changer_fun(textView7,4);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -209,7 +209,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(5,"false");
                     color_changer_fun(textView8,5);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -224,7 +224,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(6,"false");
                     color_changer_fun(textView9,6);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -239,7 +239,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(7,"false");
                     color_changer_fun(textView10,7);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -254,7 +254,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(8, "false");
                     color_changer_fun(textView11, 8);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -269,7 +269,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(9, "false");
                     color_changer_fun(textView12, 9);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -284,7 +284,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(8, "false");
                     color_changer_fun(textView13, 10);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -299,7 +299,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(11, "false");
                     color_changer_fun(textView14, 11);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -314,7 +314,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(12, "false");
                     color_changer_fun(textView15, 12);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -329,7 +329,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(13, "false");
                     color_changer_fun(textView16, 13);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -344,7 +344,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(14, "false");
                     color_changer_fun(textView17, 14);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }
@@ -359,7 +359,7 @@ public class MainActivity10 extends AppCompatActivity {
                     arrayList.set(15, "false");
                     color_changer_fun(textView18, 15);
                 }
-                database.setTable_8_col_1_tot_9(arrayList);
+                database.setTable_9_col_1_tot_16(arrayList);
             }
         });
     }

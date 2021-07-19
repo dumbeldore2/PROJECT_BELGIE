@@ -293,15 +293,15 @@ public class Database extends SQLiteOpenHelper {
                 + Table_9_col_16 + " TEXT DEFAULT 'false' ," + Table_9_col_17 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 10
-        db.execSQL("create table " + DATABASE_table_10 + "(" + Table_10_col_1 + " INTEGER DEFAULT 0 ,"
-                + Table_10_col_2 + " INTEGER DEFAULT 0 ," + Table_10_col_3 + " INTEGER DEFAULT 0 ,"
-                + Table_10_col_4 + " INTEGER DEFAULT 0 ," + Table_10_col_5 + " INTEGER DEFAULT 0 ,"
-                + Table_10_col_6 + " INTEGER DEFAULT 0 ," + Table_10_col_7 + " INTEGER DEFAULT 0 ,"
-                + Table_10_col_8 + " INTEGER DEFAULT 0 ," + Table_10_col_9 + " INTEGER DEFAULT 0 ,"
-                + Table_10_col_10 + " INTEGER DEFAULT 0 ," + Table_10_col_11 + " INTEGER DEFAULT 0 ,"
-                + Table_10_col_12 + " INTEGER DEFAULT 0 ," + Table_10_col_13 + " INTEGER DEFAULT 0 ,"
-                + Table_10_col_14 + " INTEGER DEFAULT 0 ," + Table_10_col_15 + " INTEGER DEFAULT 0 ,"
-                + Table_10_col_16 + " INTEGER DEFAULT 0 ," + Table_10_col_17 + " INTEGER DEFAULT 0 ,"
+        db.execSQL("create table " + DATABASE_table_10 + "(" + Table_10_col_1 + " TEXT DEFAULT 'false' ,"
+                + Table_10_col_2 + " TEXT DEFAULT 'false' ," + Table_10_col_3 + " TEXT DEFAULT 'false' ,"
+                + Table_10_col_4 + " TEXT DEFAULT 'false' ," + Table_10_col_5 + " TEXT DEFAULT 'false' ,"
+                + Table_10_col_6 + " TEXT DEFAULT 'false' ," + Table_10_col_7 + " TEXT DEFAULT 'false' ,"
+                + Table_10_col_8 + " TEXT DEFAULT 'false' ," + Table_10_col_9 + " TEXT DEFAULT 'false' ,"
+                + Table_10_col_10 + " TEXT DEFAULT 'false' ," + Table_10_col_11 + " TEXT DEFAULT 'false' ,"
+                + Table_10_col_12 + " TEXT DEFAULT 'false' ," + Table_10_col_13 + " TEXT DEFAULT 'false' ,"
+                + Table_10_col_14 + " TEXT DEFAULT 'false' ," + Table_10_col_15 + " TEXT DEFAULT 'false' ,"
+                + Table_10_col_16 + " TEXT DEFAULT 'false' ," + Table_10_col_17 + " TEXT DEFAULT 'false' ,"
                 + Table_10_col_18 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 11

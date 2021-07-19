@@ -1946,7 +1946,7 @@ public class Database extends SQLiteOpenHelper {
 
         //table 10 col 17
 
-        Cursor cursor17 = sqLiteDatabase.rawQuery("select " + Table_10_col_16 + " from "
+        Cursor cursor17 = sqLiteDatabase.rawQuery("select " + Table_10_col_17 + " from "
                 + DATABASE_table_10 + " where " + Table_10_col_18 + " == " + IDMAKERTABLEINFINITY() + "", null);
 
         if (cursor17.moveToFirst()) {
@@ -1977,7 +1977,7 @@ public class Database extends SQLiteOpenHelper {
         contentValues.put(Table_10_col_14, arrayList.get(13));
         contentValues.put(Table_10_col_15, arrayList.get(14));
         contentValues.put(Table_10_col_16, arrayList.get(15));
-        contentValues.put(Table_10_col_17, arrayList.get(15));
+        contentValues.put(Table_10_col_17, arrayList.get(16));
         contentValues.put(Table_10_col_18, IDMAKERTABLEINFINITY());
         sqLiteDatabase.update(DATABASE_table_10, contentValues, Table_10_col_18 + " == ?", new String[]{IDMAKERTABLEINFINITY() + ""});
     }

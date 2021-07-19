@@ -363,6 +363,8 @@ public class MainActivity11 extends AppCompatActivity {
                     arrayList.set(15, "false");
                     color_changer_fun(textView18, 15);
                 }
+                sout_fun();
+                System.out.println(arrayList.size());
                 database.setTable_10_col_1_tot_17(arrayList);
             }
         });
@@ -378,6 +380,7 @@ public class MainActivity11 extends AppCompatActivity {
                     arrayList.set(16, "false");
                     color_changer_fun(textView19, 16);
                 }
+                sout_fun();
                 database.setTable_10_col_1_tot_17(arrayList);
             }
         });

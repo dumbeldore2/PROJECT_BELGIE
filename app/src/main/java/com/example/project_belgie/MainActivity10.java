@@ -362,14 +362,14 @@ public class MainActivity10 extends AppCompatActivity {
                 database.setTable_9_col_1_tot_16(arrayList);
             }
         });
-    }
-
-    //de color changes
-    public void color_changer_fun(TextView textView , int id){
-        if (arrayList.get(id).equals("true")){
-            textView.setBackgroundResource(R.drawable.border_9);
-        } else {
-            textView.setBackgroundColor(Color.parseColor("#C4C4C4"));
         }
-    }
+
+        //de color changes
+        public void color_changer_fun(TextView textView , int id){
+            if (arrayList.get(id).equals("true")){
+                textView.setBackgroundResource(R.drawable.border_9);
+            } else {
+                textView.setBackgroundColor(Color.parseColor("#C4C4C4"));
+            }
+        }
 }

@@ -314,8 +314,8 @@ public class Database extends SQLiteOpenHelper {
                 + Table_11_col_12 + " TEXT DEFAULT 'false' ," + Table_11_col_13 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 12
-        db.execSQL("create table " + DATABASE_table_12 + "(" + Table_12_col_1 + " INTEGER DEFAULT 0 ,"
-                + Table_12_col_2 + " INTEGER DEFAULT 0 ," + Table_12_col_3 + " INTEGER DEFAULT 0 ,"
+        db.execSQL("create table " + DATABASE_table_12 + "(" + Table_12_col_1 + " TEXT DEFAULT 'false' ,"
+                + Table_12_col_2 + " TEXT DEFAULT 'false' ," + Table_12_col_3 + " TEXT DEFAULT 'false' ,"
                 + Table_12_col_4 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 13
@@ -2142,5 +2142,57 @@ public class Database extends SQLiteOpenHelper {
         contentValues.put(Table_11_col_12, arrayList.get(11));
         contentValues.put(Table_11_col_13, IDMAKERTABLEINFINITY());
         sqLiteDatabase.update(DATABASE_table_11, contentValues, Table_11_col_13 + " == ?", new String[]{IDMAKERTABLEINFINITY() + ""});
+    }
+
+
+    //alles te maken met tabel 12
+
+    public ArrayList<String> Table_12_col_1_tot_3() {
+        ArrayList<String> arrayList_uit = new ArrayList<>();
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+
+        //table 12 col 1
+
+        Cursor cursor1 = sqLiteDatabase.rawQuery("select " + Table_12_col_1 + " from "
+                + DATABASE_table_12 + " where " + Table_12_col_4 + " == " + IDMAKERTABLEINFINITY() + "", null);
+
+        if (cursor1.moveToFirst()) {
+            StringBuffer stringBuffer1 = new StringBuffer();
+            stringBuffer1.append(cursor1.getString(0));
+            arrayList_uit.add(stringBuffer1.toString());
+        }
+
+
+        //table 12 col 2
+
+        Cursor cursor2 = sqLiteDatabase.rawQuery("select " + Table_12_col_2 + " from "
+                + DATABASE_table_12 + " where " + Table_12_col_4 + " == " + IDMAKERTABLEINFINITY() + "", null);
+
+        if (cursor2.moveToFirst()) {
+            StringBuffer stringBuffer1 = new StringBuffer();
+            stringBuffer1.append(cursor2.getString(0));
+            arrayList_uit.add(stringBuffer1.toString());
+        }
+
+        //table 12 col 3
+
+        Cursor cursor3 = sqLiteDatabase.rawQuery("select " + Table_12_col_3 + " from "
+                + DATABASE_table_12 + " where " + Table_12_col_4 + " == " + IDMAKERTABLEINFINITY() + "", null);
+
+        if (cursor3.moveToFirst()) {
+            StringBuffer stringBuffer1 = new StringBuffer();
+            stringBuffer1.append(cursor3.getString(0));
+            arrayList_uit.add(stringBuffer1.toString());
+        }
+        return arrayList_uit;
+    }
+    public void setTable_12_1_tot_3(ArrayList<String> arrayList) {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Table_12_col_1, arrayList.get(0));
+        contentValues.put(Table_12_col_2, arrayList.get(1));
+        contentValues.put(Table_12_col_3, arrayList.get(2));
+        contentValues.put(Table_12_col_4, IDMAKERTABLEINFINITY());
+        sqLiteDatabase.update(DATABASE_table_12, contentValues, Table_12_col_4 + " == ?", new String[]{IDMAKERTABLEINFINITY() + ""});
     }
 }

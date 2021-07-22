@@ -83,7 +83,7 @@ public class MainActivity13 extends AppCompatActivity {
                     arrayList.set(0,"false");
                     color_changer_fun(textView3,0);
                 }
-                database.setTable_11_col_1_tot_12(arrayList);
+                database.setTable_12_1_tot_3(arrayList);
             }
         });
     }  public void click_4(){
@@ -97,7 +97,7 @@ public class MainActivity13 extends AppCompatActivity {
                     arrayList.set(1,"false");
                     color_changer_fun(textView4,1);
                 }
-                database.setTable_11_col_1_tot_12(arrayList);
+                database.setTable_12_1_tot_3(arrayList);
             }
         });
     }
@@ -112,7 +112,7 @@ public class MainActivity13 extends AppCompatActivity {
                     arrayList.set(2,"false");
                     color_changer_fun(textView5,2);
                 }
-                database.setTable_11_col_1_tot_12(arrayList);
+                database.setTable_12_1_tot_3(arrayList);
             }
         });
     }

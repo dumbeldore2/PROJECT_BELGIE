@@ -2123,4 +2123,24 @@ public class Database extends SQLiteOpenHelper {
 
         return arrayList_uit;
     }
+
+
+    public void setTable_11_col_1_tot_12(ArrayList<String> arrayList) {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Table_11_col_1, arrayList.get(0));
+        contentValues.put(Table_11_col_2, arrayList.get(1));
+        contentValues.put(Table_11_col_3, arrayList.get(2));
+        contentValues.put(Table_11_col_4, arrayList.get(3));
+        contentValues.put(Table_11_col_5, arrayList.get(4));
+        contentValues.put(Table_11_col_6, arrayList.get(5));
+        contentValues.put(Table_11_col_7, arrayList.get(6));
+        contentValues.put(Table_11_col_8, arrayList.get(7));
+        contentValues.put(Table_11_col_9, arrayList.get(8));
+        contentValues.put(Table_11_col_10, arrayList.get(9));
+        contentValues.put(Table_11_col_11, arrayList.get(10));
+        contentValues.put(Table_11_col_12, arrayList.get(11));
+        contentValues.put(Table_11_col_13, IDMAKERTABLEINFINITY());
+        sqLiteDatabase.update(DATABASE_table_11, contentValues, Table_11_col_13 + " == ?", new String[]{IDMAKERTABLEINFINITY() + ""});
+    }
 }

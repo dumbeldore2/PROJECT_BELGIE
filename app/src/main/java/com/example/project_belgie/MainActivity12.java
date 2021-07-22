@@ -60,6 +60,20 @@ public class MainActivity12 extends AppCompatActivity {
         //araylisten conecten
         arrayList = database.Table_11_col_1_tot_12();
 
+        //default color changes voor d textviews
+        color_changer_fun(textView3,0);
+        color_changer_fun(textView4,1);
+        color_changer_fun(textView5,2);
+        color_changer_fun(textView6,3);
+        color_changer_fun(textView7,4);
+        color_changer_fun(textView8,5);
+        color_changer_fun(textView9,6);
+        color_changer_fun(textView10,7);
+        color_changer_fun(textView11,8);
+        color_changer_fun(textView12,9);
+        color_changer_fun(textView13,10);
+        color_changer_fun(textView14,11);
+
         //functies
         click_back_1();
         //sout_fun();

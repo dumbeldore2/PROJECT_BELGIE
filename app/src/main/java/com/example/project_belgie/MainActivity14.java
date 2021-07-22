@@ -79,7 +79,7 @@ public class MainActivity14 extends AppCompatActivity {
                     arrayList.set(0,"false");
                     color_changer_fun(textView3,0);
                 }
-                database.setTable_12_1_tot_3(arrayList);
+                database.setTable_13_1_tot_2(arrayList);
             }
         });
     }  public void click_4(){
@@ -93,7 +93,7 @@ public class MainActivity14 extends AppCompatActivity {
                     arrayList.set(1,"false");
                     color_changer_fun(textView4,1);
                 }
-                database.setTable_12_1_tot_3(arrayList);
+                database.setTable_13_1_tot_2(arrayList);
             }
         });
     }

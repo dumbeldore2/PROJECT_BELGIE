@@ -305,13 +305,13 @@ public class Database extends SQLiteOpenHelper {
                 + Table_10_col_18 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 11
-        db.execSQL("create table " + DATABASE_table_11 + "(" + Table_11_col_1 + " INTEGER DEFAULT 0 ,"
-                + Table_11_col_2 + " INTEGER DEFAULT 0 ," + Table_11_col_3 + " INTEGER DEFAULT 0 ,"
-                + Table_11_col_4 + " INTEGER DEFAULT 0 ," + Table_11_col_5 + " INTEGER DEFAULT 0 ,"
-                + Table_11_col_6 + " INTEGER DEFAULT 0 ," + Table_11_col_7 + " INTEGER DEFAULT 0 ,"
-                + Table_11_col_8 + " INTEGER DEFAULT 0 ," + Table_11_col_9 + " INTEGER DEFAULT 0 ,"
-                + Table_11_col_10 + " INTEGER DEFAULT 0 ," + Table_11_col_11 + " INTEGER DEFAULT 0 ,"
-                + Table_11_col_12 + " INTEGER DEFAULT 0 ," + Table_11_col_13 + " INTEGER DEFAULT 0 primary key)");
+        db.execSQL("create table " + DATABASE_table_11 + "(" + Table_11_col_1 + " TEXT DEFAULT 'false' ,"
+                + Table_11_col_2 + " TEXT DEFAULT 'false' ," + Table_11_col_3 + " TEXT DEFAULT 'false' ,"
+                + Table_11_col_4 + " TEXT DEFAULT 'false' ," + Table_11_col_5 + " TEXT DEFAULT 'false' ,"
+                + Table_11_col_6 + " TEXT DEFAULT 'false' ," + Table_11_col_7 + " TEXT DEFAULT 'false' ,"
+                + Table_11_col_8 + " TEXT DEFAULT 'false' ," + Table_11_col_9 + " TEXT DEFAULT 'false' ,"
+                + Table_11_col_10 + " TEXT DEFAULT 'false' ," + Table_11_col_11 + " TEXT DEFAULT 'false' ,"
+                + Table_11_col_12 + " TEXT DEFAULT 'false' ," + Table_11_col_13 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 12
         db.execSQL("create table " + DATABASE_table_12 + "(" + Table_12_col_1 + " INTEGER DEFAULT 0 ,"

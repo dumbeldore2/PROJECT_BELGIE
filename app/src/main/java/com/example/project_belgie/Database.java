@@ -319,8 +319,8 @@ public class Database extends SQLiteOpenHelper {
                 + Table_12_col_4 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 13
-        db.execSQL("create table " + DATABASE_table_13 + "(" + Table_13_col_1 + " INTEGER DEFAULT 0 ,"
-                + Table_13_col_2 + " INTEGER DEFAULT 0 ," + Table_13_col_3 + " INTEGER DEFAULT 0 primary key)");
+        db.execSQL("create table " + DATABASE_table_13 + "(" + Table_13_col_1 + " TEXT DEFAULT 'false' ,"
+                + Table_13_col_2 + " TEXT DEFAULT 'false' ," + Table_13_col_3 + " INTEGER DEFAULT 0 primary key)");
 
         //tabel 14
         db.execSQL("create table " + DATABASE_table_14 + "(" + Table_14_col_1 + " INTEGER DEFAULT 0 ,"
@@ -2186,6 +2186,7 @@ public class Database extends SQLiteOpenHelper {
         }
         return arrayList_uit;
     }
+
     public void setTable_12_1_tot_3(ArrayList<String> arrayList) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -2195,4 +2196,46 @@ public class Database extends SQLiteOpenHelper {
         contentValues.put(Table_12_col_4, IDMAKERTABLEINFINITY());
         sqLiteDatabase.update(DATABASE_table_12, contentValues, Table_12_col_4 + " == ?", new String[]{IDMAKERTABLEINFINITY() + ""});
     }
+
+    //alles te maken met tabel 13
+
+    public ArrayList<String> Table_13_col_1_tot_2() {
+        ArrayList<String> arrayList_uit = new ArrayList<>();
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+
+        //table 13 col 1
+
+        Cursor cursor1 = sqLiteDatabase.rawQuery("select " + Table_13_col_1 + " from "
+                + DATABASE_table_13 + " where " + Table_13_col_3 + " == " + IDMAKERTABLEINFINITY() + "", null);
+
+        if (cursor1.moveToFirst()) {
+            StringBuffer stringBuffer1 = new StringBuffer();
+            stringBuffer1.append(cursor1.getString(0));
+            arrayList_uit.add(stringBuffer1.toString());
+        }
+
+
+        //table 13 col 2
+
+        Cursor cursor2 = sqLiteDatabase.rawQuery("select " + Table_13_col_2 + " from "
+                + DATABASE_table_13 + " where " + Table_13_col_3 + " == " + IDMAKERTABLEINFINITY() + "", null);
+
+        if (cursor2.moveToFirst()) {
+            StringBuffer stringBuffer1 = new StringBuffer();
+            stringBuffer1.append(cursor2.getString(0));
+            arrayList_uit.add(stringBuffer1.toString());
+        }
+
+        return arrayList_uit;
+    }
+
+    public void setTable_13_1_tot_2(ArrayList<String> arrayList) {
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(Table_13_col_1, arrayList.get(0));
+        contentValues.put(Table_13_col_2, arrayList.get(1));
+        contentValues.put(Table_13_col_3,IDMAKERTABLEINFINITY());
+        sqLiteDatabase.update(DATABASE_table_13, contentValues, Table_13_col_3 + " == ?", new String[]{IDMAKERTABLEINFINITY() + ""});
+    }
+
 }

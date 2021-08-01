@@ -57,7 +57,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text=" - 1 uur"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
@@ -69,7 +69,7 @@
                 android:layout_height="match_parent"
                 android:text="1 tot 4 \n uur"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
 
@@ -80,7 +80,7 @@
                 android:layout_height="match_parent"
                 android:text="- 4 uur"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -98,7 +98,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="- 12 uur"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
@@ -110,7 +110,7 @@
                 android:layout_height="match_parent"
                 android:text="meer dan \n 2 D"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
 
@@ -121,7 +121,7 @@
                 android:layout_height="match_parent"
                 android:text="snelle \n opname"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>

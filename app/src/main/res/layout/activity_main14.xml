@@ -56,7 +56,7 @@
                 android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 android:text="hypo"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -67,7 +67,7 @@
                 android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 android:text="hyper"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>

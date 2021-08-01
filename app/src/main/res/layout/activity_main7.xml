@@ -55,7 +55,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text=" b-"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -67,7 +67,7 @@
                 android:layout_height="match_parent"
                 android:text="b+"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
@@ -78,7 +78,7 @@
                 android:layout_height="match_parent"
                 android:text="b+/-"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -95,7 +95,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="agressief"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -106,7 +106,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="angst"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -117,7 +117,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="apatisch"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -128,7 +128,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="coma"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -147,7 +147,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="cva sympt."
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -158,7 +158,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="dronken"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -169,7 +169,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="intox"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -180,7 +180,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="neuro"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -199,7 +199,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="onrust"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -210,7 +210,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="psy"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -221,7 +221,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="suf"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -232,7 +232,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="suf/kreun."
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -251,7 +251,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="syncopaal"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -263,7 +263,7 @@
                 android:layout_height="match_parent"
                 android:text="verlamming"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
@@ -274,7 +274,7 @@
                 android:layout_height="match_parent"
                 android:text="verward"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>

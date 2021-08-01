@@ -103,7 +103,7 @@ public class MainActivity14 extends AppCompatActivity {
         if (arrayList.get(id).equals("true")){
             textView.setBackgroundResource(R.drawable.border_13);
         } else {
-            textView.setBackgroundColor(Color.parseColor("#C4C4C4"));
+            textView.setBackgroundResource(R.drawable.corner_radius_15);
         }
     }
 }

@@ -58,7 +58,7 @@
                 android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 android:text="EMO + \n (rustig)"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
@@ -70,7 +70,7 @@
                 android:layout_height="match_parent"
                 android:text="EMO ++ \n (onrustig)"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -88,7 +88,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="pijn + "
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="64dp"
                 android:layout_margin="15dp"/>
@@ -100,7 +100,7 @@
                 android:layout_height="match_parent"
                 android:text="pijn ++"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="64dp"
                 android:layout_margin="15dp"/>
 
@@ -111,7 +111,7 @@
                 android:layout_height="match_parent"
                 android:text="pijn +++"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="64dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>

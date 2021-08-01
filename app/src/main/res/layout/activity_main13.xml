@@ -57,7 +57,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="eerste aanval"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -68,7 +68,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="status"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -79,7 +79,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="meerdere aanvallen"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>

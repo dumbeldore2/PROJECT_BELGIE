@@ -54,7 +54,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text=" a-"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -66,7 +66,7 @@
                 android:layout_height="match_parent"
                 android:text="a+"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
@@ -77,7 +77,7 @@
                 android:layout_height="match_parent"
                 android:text="a+/-"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -94,7 +94,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="cyanose"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -105,7 +105,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="desat"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -116,7 +116,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="dyspnea"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -127,7 +127,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="hyperventilatie"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -146,7 +146,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="geen volzinnen"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -157,7 +157,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="luide ademhaling"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -168,7 +168,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="obstructief"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -179,7 +179,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="sliklast"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>

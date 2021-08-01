@@ -57,7 +57,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text=" cardio"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
@@ -69,7 +69,7 @@
                 android:layout_height="match_parent"
                 android:text="neuro"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
 
@@ -80,7 +80,7 @@
                 android:layout_height="match_parent"
                 android:text="diabetes"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -98,7 +98,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="bloed \n verdunners"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="15dp"/>
@@ -110,7 +110,7 @@
                 android:layout_height="match_parent"
                 android:text="copd"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
 
@@ -121,7 +121,7 @@
                 android:layout_height="match_parent"
                 android:text="aneurisma"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>

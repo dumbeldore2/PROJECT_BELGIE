@@ -56,7 +56,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:text="naam : "
                 android:textSize="32dp" />
@@ -84,7 +84,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="baby"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="64dp"
                 android:layout_margin="15dp"/>
@@ -95,7 +95,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="kind"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="64dp"
                 android:layout_margin="15dp"/>
@@ -106,7 +106,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="man"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="64dp"
                 android:layout_margin="15dp"/>
@@ -117,7 +117,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="vrouw"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="64dp"
                 android:layout_margin="15dp"/>
@@ -137,7 +137,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="20-40 jaar"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
@@ -149,7 +149,7 @@
                 android:layout_height="match_parent"
                 android:text="40-60 jaar"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
 
@@ -160,7 +160,7 @@
                 android:layout_height="match_parent"
                 android:text="60-80 jaar"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>

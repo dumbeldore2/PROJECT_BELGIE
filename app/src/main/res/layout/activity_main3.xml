@@ -56,7 +56,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:text="adres : "
                 android:textSize="32dp" />
@@ -83,7 +83,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.3"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:text="postcode/gemmente : "
                 android:textSize="32dp" />
@@ -111,7 +111,7 @@
                 android:layout_weight="0.5"
                 android:layout_height="match_parent"
                 android:text="inmobiel"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
@@ -123,7 +123,7 @@
                 android:layout_height="match_parent"
                 android:text="mobiel"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -141,7 +141,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="openbare \n plaats"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -153,7 +153,7 @@
                 android:layout_height="match_parent"
                 android:text="prive"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="48dp"
                 android:layout_margin="15dp"/>
 
@@ -164,7 +164,7 @@
                 android:layout_height="match_parent"
                 android:text="verzekerde \n omg."
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>

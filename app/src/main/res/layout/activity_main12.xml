@@ -54,7 +54,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="hoofd"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -65,7 +65,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="aangezicht"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -76,7 +76,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="hals en nek"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -87,7 +87,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="schouders"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -105,7 +105,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="arm hand"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -116,7 +116,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="thorax"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -127,7 +127,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="buik"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -138,7 +138,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="rug"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -156,7 +156,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="onderrug"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -167,7 +167,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="stuit"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -178,7 +178,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="bekken"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -189,7 +189,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="voeten"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>

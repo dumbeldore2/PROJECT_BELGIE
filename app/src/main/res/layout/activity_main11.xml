@@ -55,7 +55,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="bewegins-\ndrang"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -66,7 +66,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="snelle\nevolutie"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -77,7 +77,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="braken"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -88,7 +88,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="depressief"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -106,7 +106,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="deshydrat-\natie"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -117,7 +117,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="diarree"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -128,7 +128,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="fotofobie"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -139,7 +139,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="hart\nkloppingen"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -157,7 +157,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="hypertherm"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -168,7 +168,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="koorts"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -179,7 +179,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="misselijk"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -190,7 +190,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="nekstijf"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -208,7 +208,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="onderkoeling"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -219,7 +219,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="onwel"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -230,7 +230,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="plankharde buik"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -241,7 +241,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="stuipen"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>
@@ -259,7 +259,7 @@
                 android:layout_weight="1"
                 android:layout_height="match_parent"
                 android:text="suicidaal"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="32dp"
                 android:layout_margin="10dp"/>

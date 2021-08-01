@@ -57,7 +57,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="c-"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -69,7 +69,7 @@
                 android:layout_height="match_parent"
                 android:text="c+"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
@@ -80,7 +80,7 @@
                 android:layout_height="match_parent"
                 android:text="c+/-"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -97,7 +97,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="bleek"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -109,7 +109,7 @@
                 android:layout_height="match_parent"
                 android:text="brady"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
@@ -120,7 +120,7 @@
                 android:layout_height="match_parent"
                 android:text="cardiogeen"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -137,7 +137,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="defibrilator"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -149,7 +149,7 @@
                 android:layout_height="match_parent"
                 android:text="dood"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
@@ -160,7 +160,7 @@
                 android:layout_height="match_parent"
                 android:text="hypovolemie"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -177,7 +177,7 @@
                 android:layout_weight="0.33"
                 android:layout_height="match_parent"
                 android:text="pacemaker"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -189,7 +189,7 @@
                 android:layout_height="match_parent"
                 android:text="tachy"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
@@ -200,7 +200,7 @@
                 android:layout_height="match_parent"
                 android:text="rea"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>
@@ -217,7 +217,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="zweten"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
@@ -229,7 +229,7 @@
                 android:layout_height="match_parent"
                 android:text="bloed+"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
@@ -240,7 +240,7 @@
                 android:layout_height="match_parent"
                 android:text="pob"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
 
@@ -251,7 +251,7 @@
                 android:layout_height="match_parent"
                 android:text="shock?"
                 android:gravity="center"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:textSize="36dp"
                 android:layout_margin="15dp"/>
         </LinearLayout>

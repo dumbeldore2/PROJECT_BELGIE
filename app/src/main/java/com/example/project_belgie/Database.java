@@ -2315,7 +2315,7 @@ public class Database extends SQLiteOpenHelper {
         Cursor cursor7 = sqLiteDatabase.rawQuery("select " + Table_14_col_7 + " from "
                 + DATABASE_table_14 + " where " + Table_14_col_8 + " == " + IDMAKERTABLEINFINITY() + "", null);
 
-        if (cursor6.moveToFirst()) {
+        if (cursor7.moveToFirst()) {
             StringBuffer stringBuffer1 = new StringBuffer();
             stringBuffer1.append(cursor7.getString(0));
             arrayList_uit.add(stringBuffer1.toString());

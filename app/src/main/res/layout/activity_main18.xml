@@ -17,6 +17,9 @@
         <LinearLayout
             android:id="@+id/linear2"
             android:layout_width="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="15dp"
             android:layout_height="0dp"
             android:layout_weight="3"
             android:orientation="horizontal">
@@ -27,7 +30,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="new"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="64dp"/>
         </LinearLayout>
@@ -36,6 +39,9 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="15dp"
             android:orientation="horizontal">
 
             <TextView
@@ -44,7 +50,7 @@
                 android:layout_weight="0.25"
                 android:layout_height="match_parent"
                 android:text="logboek"
-                android:background="@color/color15"
+                android:background="@drawable/corner_radius_15"
                 android:gravity="center"
                 android:textSize="64dp"/>
         </LinearLayout>
@@ -53,6 +59,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
             android:orientation="horizontal">
 
             <TextView

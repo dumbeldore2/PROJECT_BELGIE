@@ -10,7 +10,7 @@ import android.widget.TextView;
 public class MainActivity18 extends AppCompatActivity {
 
     //textviews initen
-    TextView textView1;
+    TextView textView1,textView2,textView3;
 
     //databanken inniten
     Database database;
@@ -22,12 +22,16 @@ public class MainActivity18 extends AppCompatActivity {
 
         //textviews conecten
         textView1 = findViewById(R.id.text1);
+        textView2 = findViewById(R.id.text2);
+        textView3 = findViewById(R.id.text3);
 
         //databanken conecten
         database = new Database(this);
 
         //functies
         click_1();
+        click_2();
+        click_3();
     }
 
     public void click_1(){
@@ -36,6 +40,26 @@ public class MainActivity18 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 db_fun1();
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void click_2(){
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
+
+    public void click_3(){
+        textView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(intent);
             }
         });

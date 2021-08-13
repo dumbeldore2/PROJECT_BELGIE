@@ -59,7 +59,7 @@ public class MainActivity18 extends AppCompatActivity {
         textView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(),MainActivity19.class);
                 startActivity(intent);
             }
         });
